@@ -3,6 +3,7 @@
 	import Autoplay from 'embla-carousel-autoplay';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import * as Card from '$lib/components/ui/card';
+	import Navigation from '$lib/Navigation.svelte';
 
 	let theme: string;
 	// On component mount
@@ -14,11 +15,14 @@
 	const plugin = Autoplay({ delay: 3000, stopOnInteraction: true });
 </script>
 
+<Navigation></Navigation>
 <main>
 	<section
 		class="mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-2 py-16 text-center"
 	>
-		<h1 class="leading-1.1 text-6xl font-bold tracking-tighter">#JeepneyNation</h1>
+		<h1 class="leading-1.1 text-6xl font-bold tracking-tighter">
+			#Jeepney<span class="text-muted">Moder</span>N<span class="text-muted">iz</span>ation
+		</h1>
 		<h1 class="leading-1.1 text-5xl font-bold tracking-tighter text-primary">
 			Sentiments on Modernization
 		</h1>
@@ -65,7 +69,7 @@
 		</Carousel.Root>
 	</section>
 	<section
-		class="mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 py-16 text-center"
+		class="mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 py-20 text-center"
 	>
 		<p class="max-w-[850px] text-2xl leading-7 [&:not(:first-child)]:mt-6">
 			Our project,
@@ -77,10 +81,7 @@
 		</p>
 	</section>
 
-	<section
-		class="mx-auto grid max-w-6xl grid-cols-2 items-center gap-16 px-4 py-24 pb-20"
-		id="Overview"
-	>
+	<section class="mx-auto grid max-w-6xl grid-cols-2 items-center gap-16 px-4 py-20" id="Overview">
 		<div>
 			<h1 class="text-7xl font-extrabold tracking-tight">01</h1>
 			<h1 class="text-4xl font-extrabold tracking-tight">Overview</h1>
@@ -102,52 +103,92 @@
 		</div>
 	</section>
 
-	<section class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-24 pb-20" id="Problem">
+	<section class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20" id="Problem">
 		<div>
 			<h1 class="text-7xl font-extrabold tracking-tight">02</h1>
 			<h1 class="text-4xl font-extrabold tracking-tight">Problem</h1>
 		</div>
 		<div class="grid grid-cols-5 grid-rows-3 gap-8">
-			<div class="col-span-3 row-span-2 bg-secondary p-8 rounded-3xl ease-in duration-100 hover:bg-primary hover:text-white">
-				<h2
-					class="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
-				>
-					Research Question
-				</h2>
+			<div
+				class="col-span-3 row-span-2 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
+				<h2 class="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">Research Question</h2>
 				<p class="leading-7 [&:not(:first-child)]:mt-6">
 					What is the general attitude of the population regarding the PUV Modernization Program?
 				</p>
 			</div>
-			<div class="col-span-2 bg-secondary p-8 rounded-3xl ease-in duration-100 hover:bg-primary hover:text-white">
+			<div
+				class="col-span-2 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
 				<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight">Null Hypothesis</h3>
 				<p class="leading-7 [&:not(:first-child)]:mt-6">
 					There is no significant difference in the attitude of the population about the PUV
-					Modernization Program
+					Modernization Program.
 				</p>
 			</div>
-			<div class="col-span-2 bg-secondary p-8 rounded-3xl ease-in duration-100 hover:bg-primary hover:text-white">
+			<div
+				class="col-span-2 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
 				<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight">Alternative Hypothesis</h3>
 				<p class="leading-7 [&:not(:first-child)]:mt-6">
 					There is a significant difference in the attitude of the population about the PUV
-					Modernization Program
+					Modernization Program.
 				</p>
 			</div>
-			<div class="col-span-5 bg-secondary p-8 rounded-3xl ease-in duration-100 hover:bg-primary hover:text-white">
-				<h2
-					class="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
-				>
-					Solution
-				</h2>
+			<div
+				class="col-span-5 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
+				<h2 class="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">Solution</h2>
 				<p class="leading-7 [&:not(:first-child)]:mt-6">
 					Analyze tweets related to the PUV Modernization Program
 				</p>
 			</div>
 		</div>
 	</section>
-	<section class="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-24 pb-20" id="DataCollection">
+	<section class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20" id="DataCollection">
 		<div>
 			<h1 class="text-7xl font-extrabold tracking-tight">03</h1>
 			<h1 class="text-4xl font-extrabold tracking-tight">Data Collection</h1>
+		</div>
+		<div class="grid grid-cols-6 grid-rows-3 gap-8">
+			<div
+				class="col-span-2 row-span-2 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
+				<h2 class="scroll-m-20 text-3xl font-semibold tracking-tight">Collection</h2>
+				<p class="leading-7 [&:not(:first-child)]:mt-6">
+					Due to recent modifications to X/Twitter's API, the data collection tool SNScrape has
+					exhibited limitations in retrieving data effectively. To ensure the integrity of our
+					project, we employed a manual Twitter scraping approach targeting a minimum of 1000 tweets
+					from 2022 to the present (2024) encompassing keywords directly relevant to the research
+					topic.
+				</p>
+			</div>
+			<div
+				class="col-span-2 row-span-2 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
+				<h3 class="scroll-m-20 text-3xl font-semibold tracking-tight">Pre-processing</h3>
+				<p class="leading-7 [&:not(:first-child)]:mt-6">
+					Collected tweets underwent rigorous pre-processing to ensure quality. This includes
+					removing duplicates, non-text content, and formatting inconsistencies. The pre-processed
+					data also underwent validation checks to ensure consistency and adherence to the defined
+					criteria for inclusion.
+				</p>
+			</div>
+			<div
+				class="col-span-2 row-span-2 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
+			>
+				<h3 class="scroll-m-20 text-3xl font-semibold tracking-tight">Exploration</h3>
+				<p class="leading-7 [&:not(:first-child)]:mt-6">
+					After collection and pre-processing, the data will undergo exploratory analysis to gain
+					insights into tweet content, distribution of keywords, and potential presence of outliers.
+					This initial exploration will inform subsequent data cleaning and analysis strategies.
+				</p>
+			</div>
+			<div
+				class="col-span-6 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white flex items-center"
+			>
+				<h2 class="scroll-m-20 text-3xl font-semibold tracking-tight">Keywords</h2>
+			</div>
 		</div>
 	</section>
 </main>
