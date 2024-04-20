@@ -4,6 +4,11 @@
 		"clsx",
 		"embla",
 		"lucide",
+		"modernisasyon",
 		"pcss"
+	],
+	"cSpell.ignoreWords": [
+		"Moder",
+		"ation"
 	]
 }

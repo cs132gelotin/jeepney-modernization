@@ -10,12 +10,28 @@
 	class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
 >
 	<div class="container flex h-14 max-w-screen-2xl items-center">
-		<div class="bg-slate mr-4">
-			<a href={base} class="font-bold text-primary">#JeepneyNation</a>
+		<div class="bg-slate flex flex-row mr-4">
+			<a href={base} class="font-bold text-primary mr-6">JeepNation</a>
+			<nav class="flex items-center gap-6 text-sm">
+				<a href="/#overview" class="text-foreground/60 transition-colors hover:text-foreground/80"
+					>Overview</a
+				>
+				<a
+					href="/#problem"
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Problem</a
+				>
+				<a href="/#materials&methods" class="text-foreground/60 transition-colors hover:text-foreground/80"
+					>Materials and Methods</a
+				>
+				<a href="/#team" class="text-foreground/60 transition-colors hover:text-foreground/80"
+					>Team</a
+				>
+			</nav>
 		</div>
 		<nav class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
 			<Button
 				variant="outline"
+				size="icon"
 				href="https://github.com/cs132gelotin/jeepney-modernization"
 				target="_blank"
 			>

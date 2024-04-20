@@ -14,6 +14,9 @@ const config = {
 			}
 		},
 		extend: {
+			height: {
+				'screen-minus-navbar': 'calc(100vh - 56px)',
+			},
 			colors: {
 				border: 'hsl(var(--border) / <alpha-value>)',
 				input: 'hsl(var(--input) / <alpha-value>)',
@@ -56,7 +59,13 @@ const config = {
 			},
 			fontFamily: {
 				sans: ['Inter', ...fontFamily.sans],
-				mono: ['JetBrains Mono', ...fontFamily.mono]
+				mono: ['JetBrains Mono', ...fontFamily.mono],
+				jeep: ['Quiapo Free', 'Poppins', ...fontFamily.sans],
+				jeepney: ['Cubao Free Expanded', ...fontFamily.sans]
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
+				'jeep2': "url('/src/lib/assets/jeep2.jpg')",
 			}
 		}
 	}
