@@ -13,17 +13,17 @@
 		<div class="bg-slate flex flex-row mr-4">
 			<a href={base} class="font-bold text-primary mr-6">JeepNation</a>
 			<nav class="flex items-center gap-6 text-sm">
-				<a href="/#overview" class="text-foreground/60 transition-colors hover:text-foreground/80"
+				<a href="{`${base}#overview`}" class="text-foreground/60 transition-colors hover:text-foreground/80"
 					>Overview</a
 				>
 				<a
-					href="/#problem"
+				href="{`${base}#problem`}"
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Problem</a
 				>
-				<a href="/#materials&methods" class="text-foreground/60 transition-colors hover:text-foreground/80"
+				<a href="{`${base}#materials&methods`}" class="text-foreground/60 transition-colors hover:text-foreground/80"
 					>Materials and Methods</a
 				>
-				<a href="/#team" class="text-foreground/60 transition-colors hover:text-foreground/80"
+				<a href="{`${base}#team`}" class="text-foreground/60 transition-colors hover:text-foreground/80"
 					>Team</a
 				>
 			</nav>
