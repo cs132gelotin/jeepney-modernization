@@ -4,6 +4,7 @@
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import * as Card from '$lib/components/ui/card';
 	import Navigation from '$lib/Navigation.svelte';
+	import jeep1 from '$lib/assets/jeep1.jpg';
 
 	let theme: string;
 	// On component mount
@@ -97,8 +98,8 @@
 		<div class="relative h-full">
 			<img
 				class="h-full w-full rounded-lg object-cover"
-				src="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/415484402_756029469879017_7177651367276687478_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH4NHdT9NHSFdHNchYqL8npH10ikwPlVFsfXSKTA-VUW1d6OEdJaXzLB0lkIu73bGTmOP2byDGfm-q3Li35TUL-&_nc_ohc=_3t4bnFE-q4Ab4N58rd&_nc_ht=scontent-sin6-2.xx&oh=00_AfBsEVb9H4zY81LnLUoH_pPupMZ8ol4MtH0LPQIa5ggYgg&oe=661C1167"
-				alt="no to puv phaseout rally"
+				src={jeep1}
+				alt="#NoToJeepneyPhaseout Rally"
 			/>
 		</div>
 	</section>
@@ -185,7 +186,7 @@
 				</p>
 			</div>
 			<div
-				class="col-span-6 rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white flex items-center"
+				class="col-span-6 flex items-center rounded-3xl bg-secondary p-8 duration-100 ease-in hover:bg-primary hover:text-white"
 			>
 				<h2 class="scroll-m-20 text-3xl font-semibold tracking-tight">Keywords</h2>
 			</div>

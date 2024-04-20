@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Sun from 'lucide-svelte/icons/sun';
 	import Moon from 'lucide-svelte/icons/moon';
-
 	import { toggleMode } from 'mode-watcher';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { base } from '$app/paths';
 </script>
 
 <header
@@ -11,7 +11,7 @@
 >
 	<div class="container flex h-14 max-w-screen-2xl items-center">
 		<div class="bg-slate mr-4">
-			<a href="/" class="font-bold text-primary">#JeepneyNation</a>
+			<a href={base} class="font-bold text-primary">#JeepneyNation</a>
 		</div>
 		<nav class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
 			<Button
