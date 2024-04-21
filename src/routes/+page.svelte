@@ -453,9 +453,9 @@
 				</p>
 			</div>
 			<div
-				class="group col-span-6 flex flex-col items-center gap-4 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
+				class="group col-span-6 flex flex-col items-center gap-4 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-jeep3 bg-cover bg-bottom hover:shadow-2xl"
 			>
-				<h2 class="scroll-m-20 pb-3 text-4xl font-bold tracking-tight group-hover:text-white">
+				<h2 class="scroll-m-20 pb-3 text-4xl font-bold tracking-tight group-hover:text-white ">
 					Keywords
 				</h2>
 				<div class="flex max-w-4xl flex-wrap items-center justify-center gap-x-4 gap-y-3">
