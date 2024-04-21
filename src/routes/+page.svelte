@@ -284,11 +284,18 @@
 							>
 							<HoverCard.Content>
 								<div class="flex flex-col">
-									<img
-										src="https://ltfrb.gov.ph/wp-content/uploads/2023/05/PUVMP-logo-1536x1027.png"
-										alt="PUVMP Banner"
-									/>
-									<p>LTFRB | PUV Modernization Program</p>
+									<a
+										href="https://ltfrb.gov.ph/puv-modernization-program/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										<img
+											src="https://ltfrb.gov.ph/wp-content/uploads/2023/05/PUVMP-logo-1536x1027.png"
+											alt="PUVMP Banner"
+											class="rounded-md"
+										/>
+										<p class="mt-2 font-semibold text-md">LTFRB | PUV Modernization Program</p>
+									</a>
 								</div>
 							</HoverCard.Content>
 						</HoverCard.Root>
@@ -313,11 +320,18 @@
 							>
 							<HoverCard.Content>
 								<div class="flex flex-col">
-									<img
-										src="https://changing-transport.org/wp-content/uploads/MicrosoftTeams-image-1024x768.jpg"
-										alt="Modern Electric Jeepney"
-									/>
-									<p>Changing Transport | Modernizing Public Transport in the Philippines</p>
+									<a
+										href="https://changing-transport.org/modernizing-public-transport-in-the-philippines/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										<img
+											src="https://changing-transport.org/wp-content/uploads/MicrosoftTeams-image-1024x768.jpg"
+											alt="Modern Electric Jeepney"
+											class="rounded-md"
+										/>
+										<p class="mt-2 font-semibold text-md">Changing Transport | Modernizing Public Transport in the Philippines</p>
+									</a>
 								</div>
 							</HoverCard.Content>
 						</HoverCard.Root>
@@ -331,14 +345,21 @@
 							>
 							<HoverCard.Content>
 								<div class="flex flex-col">
-									<img
-										src="https://www.rappler.com/tachyon/2023/03/jeepney-stike-puv-modernization-drivers-protest-march-6-2023-001-scaled.jpg?resize=2560%2C1707&zoom=1"
-										alt="Jeepney driver with #NoToPUVPhaseout placard"
-									/>
-									<p>
-										Rappler (Lance Yu) | ‘Welga kami!’ Transport strike spotlights jeepney
-										modernization issues
-									</p>
+									<a
+										href="https://www.rappler.com/business/summary-recap-transport-strike-spotlights-jeepney-modernization-issues-march-6-2023/"
+										target="_blank"
+										rel="noreferrer noopener"
+									>
+										<img
+											src="https://www.rappler.com/tachyon/2023/03/jeepney-stike-puv-modernization-drivers-protest-march-6-2023-001-scaled.jpg?resize=2560%2C1707&zoom=1"
+											alt="Jeepney driver with #NoToPUVPhaseout placard"
+											class="rounded-md"
+										/>
+										<p class="mt-2 font-semibold text-md">
+											Rappler (Lance Yu) | ‘Welga kami!’ Transport strike spotlights jeepney
+											modernization issues
+										</p>
+									</a>
 								</div>
 							</HoverCard.Content>
 						</HoverCard.Root>
@@ -453,9 +474,9 @@
 				</p>
 			</div>
 			<div
-				class="group col-span-6 flex flex-col items-center gap-4 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-jeep3 bg-cover bg-bottom hover:shadow-2xl"
+				class="group col-span-6 flex flex-col items-center gap-4 rounded-3xl bg-secondary bg-cover bg-bottom p-8 drop-shadow-lg duration-100 ease-in hover:bg-jeep3 hover:shadow-2xl"
 			>
-				<h2 class="scroll-m-20 pb-3 text-4xl font-bold tracking-tight group-hover:text-white ">
+				<h2 class="scroll-m-20 pb-3 text-4xl font-bold tracking-tight group-hover:text-white">
 					Keywords
 				</h2>
 				<div class="flex max-w-4xl flex-wrap items-center justify-center gap-x-4 gap-y-3">
@@ -515,7 +536,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-gradient-radial-bottom from-primary/40 dark:from-primary/60 to-transparent" id="team">
+	<section
+		class="bg-gradient-radial-bottom from-primary/40 to-transparent dark:from-primary/60"
+		id="team"
+	>
 		<div class="z-20 mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20">
 			<div class="z-10 flex flex-col items-center">
 				<h1
@@ -614,12 +638,15 @@
 					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
 						Hey there! I'm Gelo, a 4th year BS Computer Science student at UP Diliman with a passion
 						for front-end web development. I'm particularly interested in frameworks like Svelte and
-						React. 
-						</p><p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
-						Lately, I've been diving into the world of productivity systems, exploring tools
-						like Todoist and Notion Calendar to keep myself on top of things.
-						</p> <p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">When I need a break from the code, you might find me battling it
-						out in DOTA 2 or Valorant. To unwind, I love jamming out to TWICE and BINI.
+						React.
+					</p>
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						Lately, I've been diving into the world of productivity systems, exploring tools like
+						Todoist and Notion Calendar to keep myself on top of things.
+					</p>
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						When I need a break from the code, you might find me battling it out in DOTA 2 or
+						Valorant. To unwind, I love jamming out to TWICE and BINI.
 					</p>
 				</div>
 				<div
