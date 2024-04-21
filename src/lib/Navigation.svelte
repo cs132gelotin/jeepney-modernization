@@ -13,7 +13,7 @@
 		<div class="bg-slate mr-4 flex flex-row">
 			<a href={base} class="mr-6 flex items-center">
 				<img
-					src="src\lib\assets\logo.png"
+					src="https://github.com/cs132gelotin/jeepney-modernization/blob/9802ca544149ddf998264753f9e6c3afaa669e02/src/lib/assets/logo.png"
 					alt="JeepneyNation"
 					class="h-8 w-auto">
 				<!-- <p class="font-bold text-primary">JeepneyNation</p> -->
