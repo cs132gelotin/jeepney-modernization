@@ -28,7 +28,7 @@
 		class="w-full bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
 	>
 		<div
-			class="mx-auto flex h-screen-minus-navbar max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
+			class="mx-auto flex min-h-screen-minus-navbar max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
 		>
 			<h1 class="leading-1.1 text-6xl font-bold tracking-tighter drop-shadow-xl">
 				#Jeepney<span class="text-muted line-through decoration-destructive decoration-wavy"
