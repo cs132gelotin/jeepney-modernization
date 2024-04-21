@@ -9,6 +9,7 @@ The PUV Modernization Program has been one of the relevant issues in the Philipp
 ## Problem
 
 ### Background
+
 On June 19 2017, the Department of Transportation (DOTr) issued Department Order No. 2017-011, otherwise known as the Omnibus Guidelines on the Planning and Identification of Public Road Transportation Services and Franchise Issuance which launched the PUVMP (Public Utility Vehicle Modernization Program).
 
 The program aims to transform the road sector of public transport through the introduction of safer and climate-friendly vehicles, improved regulation, and industry consolidation. The program is beneficial in the long run however operators are caught in a difficult situation due to the high cost of the program. According to the Office of Transportation Cooperatives, jeepney operators must raise P300,000 in paid-up capital. Operators may have to spend between P20,000 to P30,000 each to comply with other requirements. Under the Omnibus Franchising Guidelines, cooperatives and corporations will also be required to eventually upgrade their fleet into modern jeepneys, which can cost up to P2.5 million per unit.
@@ -60,5 +61,3 @@ After collection and pre-processing, the data will undergo exploratory analysis 
 11. puv modernization
 12. puv phaseout
 13. strike
-
-
