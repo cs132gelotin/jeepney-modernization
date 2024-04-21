@@ -5,11 +5,13 @@
 	import * as Card from '$lib/components/ui/card';
 	import * as HoverCard from '$lib/components/ui/hover-card/index.js';
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import Navigation from '$lib/Navigation.svelte';
 	import jeep1 from '$lib/assets/jeep1.jpg';
 	import GCAvatar from '$lib/assets/_DSC3637_512x512.png';
-	import { base } from '$app/paths';
+	import ADAvatar from '$lib/assets/435194078_981985919488202_6376095500813041272_n.png';
+	import JGAvatar from '$lib/assets/435201424_342404608842278_1262981411790175769_n.jpg';
 	let theme: string;
 	// On component mount
 	onMount(() => {
@@ -23,7 +25,7 @@
 <Navigation></Navigation>
 <main>
 	<section
-		class="bg-gradient-radial-top w-full from-blue-300/80 to-transparent dark:from-primary/10"
+		class="w-full bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
 	>
 		<div
 			class="mx-auto flex h-screen-minus-navbar max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
@@ -315,7 +317,7 @@
 										src="https://changing-transport.org/wp-content/uploads/MicrosoftTeams-image-1024x768.jpg"
 										alt="Modern Electric Jeepney"
 									/>
-									<p>Changing Transport | Modernising Public Transport in the Philippines</p>
+									<p>Changing Transport | Modernizing Public Transport in the Philippines</p>
 								</div>
 							</HoverCard.Content>
 						</HoverCard.Root>
@@ -513,11 +515,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="team">
-		<div
-			class="z-1 bg-jeep3 absolute h-screen-minus-navbar w-full bg-cover bg-center opacity-30 blur-sm"
-		></div>
-		<div class="z-20 mx-auto flex h-screen-minus-navbar max-w-6xl flex-col gap-6 px-4 py-20">
+	<section class="bg-gradient-radial-bottom from-primary/40 dark:from-primary/60 to-transparent" id="team">
+		<div class="z-20 mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20">
 			<div class="z-10 flex flex-col items-center">
 				<h1
 					class="font-jeepney text-8xl font-extrabold tracking-tight text-pink-600 drop-shadow-md"
@@ -532,49 +531,134 @@
 				<div
 					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
-					<div class="mb-4 flex justify-center">
-						<Avatar.Root>
-							<Avatar.Image src="" alt="" />
-							<Avatar.Fallback>JG</Avatar.Fallback>
-						</Avatar.Root>
-					</div>
-					<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight group-hover:text-white">
-						Justin Andrei Gonzales
-					</h3>
-					<p class="text-lg leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, et.
+					<HoverCard.Root>
+						<HoverCard.Trigger>
+							<div class="mb-4 flex justify-center">
+								<Avatar.Root>
+									<Avatar.Image src={JGAvatar} alt="Justin Gonzales" />
+									<Avatar.Fallback>JG</Avatar.Fallback>
+								</Avatar.Root>
+							</div>
+							<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight group-hover:text-white">
+								Justin Andrei<br />Gonzales
+							</h3></HoverCard.Trigger
+						>
+						<HoverCard.Content>
+							<div class="flex flex-1 items-center justify-center space-x-2">
+								<Button
+									variant="outline"
+									size="icon"
+									href="mailto:jcgonzales12@up.edu.ph"
+									target="_blank"
+								>
+									<i class="fa-solid fa-envelope fa-lg"></i>
+								</Button>
+							</div></HoverCard.Content
+						>
+					</HoverCard.Root>
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						I'm Justin, a 2nd year BS Computer Science student at the University of the Philippines,
+						Diliman. With my interest in Computers and Technology, I am currently finding my passion
+						where I can utilize my skills and help the community.
+					</p>
+
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						In my free time, I enjoy watching K-dramas, playing video games like League of Legends
+						and TFT. I also enjoy playing basketball whenever possible.
 					</p>
 				</div>
 				<div
 					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
-					<div class="mb-4 flex justify-center">
-						<Avatar.Root>
-							<Avatar.Image src={GCAvatar} alt="Angelo Convento" />
-							<Avatar.Fallback>GC</Avatar.Fallback>
-						</Avatar.Root>
-					</div>
-					<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight group-hover:text-white">
-						Godfrey Angelo Convento
-					</h3>
-					<p class="text-lg leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, et.
+					<HoverCard.Root>
+						<HoverCard.Trigger>
+							<div class="mb-4 flex justify-center">
+								<Avatar.Root>
+									<Avatar.Image src={GCAvatar} alt="Angelo Convento" />
+									<Avatar.Fallback>GC</Avatar.Fallback>
+								</Avatar.Root>
+							</div>
+							<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight group-hover:text-white">
+								Godfrey Angelo Convento
+							</h3></HoverCard.Trigger
+						>
+						<HoverCard.Content>
+							<div class="flex flex-1 items-center justify-center space-x-2">
+								<Button
+									variant="outline"
+									size="icon"
+									href="mailto:gaconvento@up.edu.ph"
+									target="_blank"
+								>
+									<i class="fa-solid fa-envelope fa-lg"></i>
+								</Button>
+								<Button
+									variant="outline"
+									size="icon"
+									href="https://github.com/conventoangelo"
+									target="_blank"
+								>
+									<i class="fa-brands fa-github fa-lg"></i>
+								</Button>
+								<Button
+									variant="outline"
+									size="icon"
+									href="https://www.linkedin.com/in/conventoangelo/"
+									target="_blank"
+								>
+									<i class="fa-brands fa-linkedin fa-lg"></i>
+								</Button>
+							</div></HoverCard.Content
+						>
+					</HoverCard.Root>
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						Hey there! I'm Gelo, a 4th year BS Computer Science student at UP Diliman with a passion
+						for front-end web development. I'm particularly interested in frameworks like Svelte and
+						React. 
+						</p><p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						Lately, I've been diving into the world of productivity systems, exploring tools
+						like Todoist and Notion Calendar to keep myself on top of things.
+						</p> <p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">When I need a break from the code, you might find me battling it
+						out in DOTA 2 or Valorant. To unwind, I love jamming out to TWICE and BINI.
 					</p>
 				</div>
 				<div
 					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
-					<div class="mb-4 flex justify-center">
-						<Avatar.Root>
-							<Avatar.Image src="" alt="" />
-							<Avatar.Fallback>GD</Avatar.Fallback>
-						</Avatar.Root>
-					</div>
-					<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight group-hover:text-white">
-						Gelo De Leon
-					</h3>
-					<p class="text-lg leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, et.
+					<HoverCard.Root>
+						<HoverCard.Trigger>
+							<div class="mb-4 flex justify-center">
+								<Avatar.Root>
+									<Avatar.Image src={ADAvatar} alt="Gelo De Leon" />
+									<Avatar.Fallback>AD</Avatar.Fallback>
+								</Avatar.Root>
+							</div>
+							<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight group-hover:text-white">
+								Angelo<br />De Leon
+							</h3></HoverCard.Trigger
+						>
+						<HoverCard.Content>
+							<div class="flex flex-1 items-center justify-center space-x-2">
+								<Button
+									variant="outline"
+									size="icon"
+									href="mailto:apdeleon4@up.edu.ph"
+									target="_blank"
+								>
+									<i class="fa-solid fa-envelope fa-lg"></i>
+								</Button>
+							</div></HoverCard.Content
+						>
+					</HoverCard.Root>
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						Hi! I'm Gelo, a 2nd year Computer Science student from the University of the
+						Philippines. Having the interest for both programming and graphic design, I became
+						passionate in honing my creative and technical skills to make a meaningful difference in
+						the world.
+					</p>
+					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
+						Besides that, I mainly play games in my spare time. I enjoy games similar to Monster
+						Hunter and Terraria, as well as some competitive games such as Valorant and TFT.
 					</p>
 				</div>
 			</div>

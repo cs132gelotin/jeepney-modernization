@@ -66,6 +66,7 @@ const config = {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
 				'gradient-radial-top': 'radial-gradient(circle at top, var(--tw-gradient-stops))',
+				'gradient-radial-bottom': 'radial-gradient(circle at bottom, var(--tw-gradient-stops))',
 				'jeep2': "url('/src/lib/assets/jeep2.jpg')",
 				'jeep3': "url('/src/lib/assets/jeep3.jpg')",
 			}
