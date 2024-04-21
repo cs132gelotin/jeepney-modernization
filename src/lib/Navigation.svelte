@@ -10,21 +10,31 @@
 	class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
 >
 	<div class="container flex h-14 max-w-screen-2xl items-center">
-		<div class="bg-slate flex flex-row mr-4">
-			<a href={base} class="font-bold text-primary mr-6">JeepNation</a>
+		<div class="bg-slate mr-4 flex flex-row">
+			<a href={base} class="mr-6 flex items-center">
+				<img
+					src="src\lib\assets\logo.png"
+					alt="JeepneyNation"
+					class="h-8 w-auto">
+				<!-- <p class="font-bold text-primary">JeepneyNation</p> -->
+			</a>
 			<nav class="flex items-center gap-6 text-sm">
-				<a href="{`${base}#overview`}" class="text-foreground/60 transition-colors hover:text-foreground/80"
-					>Overview</a
+				<a
+					href={`${base}#overview`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Overview</a
 				>
 				<a
-				href="{`${base}#problem`}"
+					href={`${base}#problem`}
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Problem</a
 				>
-				<a href="{`${base}#materials&methods`}" class="text-foreground/60 transition-colors hover:text-foreground/80"
+				<a
+					href={`${base}#materials&methods`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80"
 					>Materials and Methods</a
 				>
-				<a href="{`${base}#team`}" class="text-foreground/60 transition-colors hover:text-foreground/80"
-					>Team</a
+				<a
+					href={`${base}#team`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Team</a
 				>
 			</nav>
 		</div>
