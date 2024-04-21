@@ -8,7 +8,7 @@
 	import { buttonVariants } from '$lib/components/ui/button';
 	import Navigation from '$lib/Navigation.svelte';
 	import jeep1 from '$lib/assets/jeep1.jpg';
-
+	import { base } from '$app/paths';
 	let theme: string;
 	// On component mount
 	onMount(() => {
@@ -549,7 +549,7 @@
 				>
 					<div class="mb-4 flex justify-center">
 						<Avatar.Root>
-							<Avatar.Image src="src\lib\assets\_DSC3637_512x512.png" alt="Angelo Convento" />
+							<Avatar.Image src="{`${base}/src/lib/assets/_DSC3637_512x512.png`}" alt="Angelo Convento" />
 							<Avatar.Fallback>GC</Avatar.Fallback>
 						</Avatar.Root>
 					</div>
