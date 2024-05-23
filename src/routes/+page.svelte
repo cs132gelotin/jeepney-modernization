@@ -8,10 +8,13 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import Navigation from '$lib/Navigation.svelte';
+	import ChevronsUpDown from 'lucide-svelte/icons/chevrons-up-down';
 	import jeep1 from '$lib/assets/jeep1.jpg';
 	import GCAvatar from '$lib/assets/_DSC3637_512x512.png';
 	import ADAvatar from '$lib/assets/435194078_981985919488202_6376095500813041272_n.png';
 	import JGAvatar from '$lib/assets/435201424_342404608842278_1262981411790175769_n.jpg';
+	import * as Collapsible from '$lib/components/ui/collapsible';
+	import { Separator } from '$lib/components/ui/separator';
 	let theme: string;
 	// On component mount
 	onMount(() => {
@@ -28,7 +31,7 @@
 		class="w-full bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
 	>
 		<div
-			class="mx-auto flex min-h-screen-minus-navbar max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
+			class="min-h-screen-minus-navbar mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
 		>
 			<h1 class="leading-1.1 text-6xl font-bold tracking-tighter drop-shadow-xl">
 				#Jeepney<span class="text-muted line-through decoration-destructive decoration-wavy"
@@ -294,7 +297,7 @@
 											alt="PUVMP Banner"
 											class="rounded-md"
 										/>
-										<p class="mt-2 font-semibold text-md">LTFRB | PUV Modernization Program</p>
+										<p class="text-md mt-2 font-semibold">LTFRB | PUV Modernization Program</p>
 									</a>
 								</div>
 							</HoverCard.Content>
@@ -330,7 +333,9 @@
 											alt="Modern Electric Jeepney"
 											class="rounded-md"
 										/>
-										<p class="mt-2 font-semibold text-md">Changing Transport | Modernizing Public Transport in the Philippines</p>
+										<p class="text-md mt-2 font-semibold">
+											Changing Transport | Modernizing Public Transport in the Philippines
+										</p>
 									</a>
 								</div>
 							</HoverCard.Content>
@@ -355,7 +360,7 @@
 											alt="Jeepney driver with #NoToPUVPhaseout placard"
 											class="rounded-md"
 										/>
-										<p class="mt-2 font-semibold text-md">
+										<p class="text-md mt-2 font-semibold">
 											Rappler (Lance Yu) | ‘Welga kami!’ Transport strike spotlights jeepney
 											modernization issues
 										</p>
@@ -374,10 +379,16 @@
 					class="col-span-1 row-span-2 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 				>
 					<i class="fa-regular fa-circle-question fa-2xl mb-4"></i>
-					<h2 class="scroll-m-20 pb-2 text-3xl font-bold tracking-tight">Research Question</h2>
-					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-						What is the general attitude of the population regarding the PUV Modernization Program?
-					</p>
+					<h2 class="scroll-m-20 pb-2 text-3xl font-bold tracking-tight">Research Questions</h2>
+					<ol>
+						<li class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+							1. What is the general reaction of the population regarding the PUV Modernization
+							Program?
+						</li>
+						<li class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+							2. What are the frequent words used when the user activity increases?
+						</li>
+					</ol>
 				</div>
 				<div
 					class="group col-span-2 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
@@ -388,8 +399,7 @@
 						Null Hypothesis
 					</h3>
 					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-						There is no significant difference in the attitude of the population about the PUV
-						Modernization Program.
+						The ratio of positive to negative tweets is constant throughout the study period.
 					</p>
 				</div>
 				<div
@@ -411,8 +421,8 @@
 						Alternative Hypothesis
 					</h3>
 					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-						There is a significant difference in the attitude of the population about the PUV
-						Modernization Program.
+						The ratio of positive to negative tweets significantly changes throughout the study
+						period.
 					</p>
 				</div>
 			</div>
@@ -438,41 +448,6 @@
 			>
 		</div>
 		<div class="grid auto-rows-auto grid-cols-6 gap-8">
-			<div
-				class="col-span-2 row-span-1 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
-			>
-				<i class="fa-solid fa-magnifying-glass fa-2xl mb-4"></i>
-				<h2 class="scroll-m-20 text-3xl font-semibold tracking-tight">Collection</h2>
-				<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-					Due to recent modifications to X/Twitter's API, the data collection tool SNScrape has
-					exhibited limitations in retrieving data effectively. So instead, we employed a manual
-					Twitter scraping approach targeting a minimum of 1000 tweets from 2022 to the present
-					(2024) encompassing keywords directly relevant to the research topic.
-				</p>
-			</div>
-			<div
-				class="col-span-2 row-span-1 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
-			>
-				<i class="fa-solid fa-wand-magic-sparkles fa-2xl mb-4"></i>
-				<h3 class="scroll-m-20 text-3xl font-semibold tracking-tight">Pre-processing</h3>
-				<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-					Collected tweets underwent rigorous pre-processing to ensure quality. This includes
-					removing duplicates, non-text content, and formatting inconsistencies. The pre-processed
-					data also underwent validation checks to ensure consistency and adherence to the defined
-					criteria for inclusion.
-				</p>
-			</div>
-			<div
-				class="col-span-2 row-span-1 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
-			>
-				<i class="fa-solid fa-chart-line fa-2xl mb-4"></i>
-				<h3 class="scroll-m-20 text-3xl font-semibold tracking-tight">Exploration</h3>
-				<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-					After collection and pre-processing, the data will undergo exploratory analysis to gain
-					insights into tweet content, distribution of keywords, and potential presence of outliers.
-					This initial exploration will inform subsequent data cleaning and analysis strategies.
-				</p>
-			</div>
 			<div
 				class="group col-span-6 flex flex-col items-center gap-4 rounded-3xl bg-secondary bg-cover bg-bottom p-8 drop-shadow-lg duration-100 ease-in hover:bg-jeep3 hover:shadow-2xl"
 			>
@@ -534,7 +509,165 @@
 					>
 				</div>
 			</div>
+			<div
+				class="col-span-2 row-span-1 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<i class="fa-solid fa-magnifying-glass fa-2xl mb-4"></i>
+				<h2 class="scroll-m-20 text-3xl font-semibold tracking-tight">Collection</h2>
+				<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+					Due to recent modifications to X/Twitter's API, the data collection tool SNScrape has
+					exhibited limitations in retrieving data effectively. So instead, we employed a manual
+					Twitter scraping approach targeting a minimum of 1000 tweets from 2022 to the present
+					(2024) encompassing keywords directly relevant to the research topic.
+				</p>
+			</div>
+			<div
+				class="col-span-2 row-span-1 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<i class="fa-solid fa-wand-magic-sparkles fa-2xl mb-4"></i>
+				<h3 class="scroll-m-20 text-3xl font-semibold tracking-tight">Pre-processing</h3>
+				<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+					Collected tweets underwent rigorous pre-processing to ensure quality. This includes
+					removing duplicates, non-text content, and formatting inconsistencies. The pre-processed
+					data also underwent validation checks to ensure consistency and adherence to the defined
+					criteria for inclusion.
+				</p>
+			</div>
+			<div
+				class="col-span-2 row-span-1 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<i class="fa-solid fa-chart-line fa-2xl mb-4"></i>
+				<h3 class="scroll-m-20 text-3xl font-semibold tracking-tight">Exploration</h3>
+				<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+					After collection and pre-processing, the data will undergo exploratory analysis to gain
+					insights into tweet content, distribution of keywords, and potential presence of outliers.
+					This initial exploration will inform subsequent data cleaning and analysis strategies.
+				</p>
+			</div>
 		</div>
+		<Collapsible.Root class="w-full space-y-4">
+			<div class="flex items-center justify-between space-x-4 px-4">
+				<h4 class="text-3xl font-semibold">Natural Language Processing</h4>
+				<Collapsible.Trigger asChild let:builder>
+					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+						<ChevronsUpDown class="h-4 w-4" />
+						<span class="sr-only">Toggle</span>
+					</Button>
+				</Collapsible.Trigger>
+			</div>
+			<Collapsible.Content class="space-y-2">
+				<div class="px-4 py-3">
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+						The tweets were processed using Natural Language Processing (NLP) techniques. However,
+						due to the Filipino language content, additional steps were required:
+					</p>
+					<ol class="mt-2 list-decimal pl-10">
+						<li class="text-lg leading-7">
+							<span class="font-bold">Translation:</span> The Filipino content was translated into English
+							using GoogleTrans. This was necessary to ensure the accuracy of the subsequent NLP steps.
+						</li>
+						<li class="text-lg leading-7">
+							<span class="font-bold">Manual Checking:</span> The translated content was manually checked
+							to ensure the accuracy of the translation. This was important to maintain the context and
+							meaning of the original content.
+						</li>
+					</ol>
+					<h5
+						class="text-xl font-bold leading-7 decoration-2 hover:underline [&:not(:first-child)]:mt-6"
+					>
+						Cleaning the Filipino Tweets
+					</h5>
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-3">
+						The Filipino content required additional cleaning to improve the accuracy of the
+						translation. This involved:
+					</p>
+					<ol class="mt-2 list-decimal pl-10">
+						<li class="text-lg leading-7">
+							<span class="font-bold">Changing Filipino Slang:</span> Filipino slang and shorthand were
+							converted into formal words to improve the accuracy of the translation.
+						</li>
+						<li class="text-lg leading-7">
+							<span class="font-bold">Lemmatization:</span> Specific non-English terms and groups of
+							special category words were lemmatized.
+						</li>
+					</ol>
+					<h5
+						class="text-xl font-bold leading-7 decoration-2 hover:underline [&:not(:first-child)]:mt-6"
+					>
+						Translating the Tweets
+					</h5>
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-3">
+						GoogleTrans was used to translate the cleaned Filipino content into English. The
+						translated content was then further cleaned by:
+					</p>
+					<ol class="mt-2 list-decimal pl-10">
+						<li class="text-lg leading-7">
+							<span class="font-bold">Lowercasing:</span> All the translated content was converted to
+							lowercase to maintain consistency.
+						</li>
+						<li class="text-lg leading-7">
+							<span class="font-bold">Removing Punctuation Marks:</span> All punctuation marks were removed
+							from the translated content to simplify the subsequent NLP steps.
+						</li>
+					</ol>
+					<h5
+						class="text-xl font-bold leading-7 decoration-2 hover:underline [&:not(:first-child)]:mt-6"
+					>
+						Manual Correction of the Translation
+					</h5>
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-3">
+						The translated tweets was manually checked and corrected to improve the context
+						accuracy, fix erroneous spacing, and catch mistakes. The manually corrected tweets was
+						then used in the subsequent analysis.
+					</p>
+				</div>
+			</Collapsible.Content>
+		</Collapsible.Root>
+		<Separator />
+		<Collapsible.Root class="w-full space-y-4">
+			<div class="flex items-center justify-between space-x-4 px-4">
+				<h4 class="text-3xl font-semibold">Visualization</h4>
+				<Collapsible.Trigger asChild let:builder>
+					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+						<ChevronsUpDown class="h-4 w-4" />
+						<span class="sr-only">Toggle</span>
+					</Button>
+				</Collapsible.Trigger>
+			</div>
+			<Collapsible.Content class="space-y-2">
+				<div class="px-4 py-3">
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+						Effective communication of research findings extends beyond mere textual presentation.
+						Recognizing this, we leveraged the power of data visualization to transform our insights
+						into readily comprehensible graphs and charts. This visual approach fosters a clear
+						understanding of the data for a broader audience.
+					</p>
+				</div>
+			</Collapsible.Content>
+		</Collapsible.Root>
+		<Separator />
+		<Collapsible.Root class="w-full space-y-4">
+			<div class="flex items-center justify-between space-x-4 px-4">
+				<h4 class="text-3xl font-semibold">Testing</h4>
+				<Collapsible.Trigger asChild let:builder>
+					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+						<ChevronsUpDown class="h-4 w-4" />
+						<span class="sr-only">Toggle</span>
+					</Button>
+				</Collapsible.Trigger>
+			</div>
+			<Collapsible.Content class="space-y-2">
+				<div class="px-4 py-3">
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+						Following data visualization, we employed the Chi-Square Test to assess the relationship
+						between sentiment (for/against modernization) and average tweet interaction (likes,
+						retweets, etc.). This analysis aimed to uncover how public opinion on jeepney
+						modernization influences online engagement.
+					</p>
+				</div>
+			</Collapsible.Content>
+		</Collapsible.Root>
+		<Separator />
 	</section>
 	<section
 		class="bg-gradient-radial-bottom from-primary/40 to-transparent dark:from-primary/60"
