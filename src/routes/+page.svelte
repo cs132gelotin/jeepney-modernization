@@ -29,7 +29,7 @@
 	const plugin = Autoplay({ delay: 3000, stopOnInteraction: true });
 </script>
 
-<Navigation></Navigation>
+<Navigation />
 <main>
 	<section
 		class="w-full bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
@@ -37,22 +37,22 @@
 		<div
 			class="min-h-screen-minus-navbar mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
 		>
-			<h1 class="leading-1.1 text-4xl font-bold tracking-tighter drop-shadow-xl md:text-6xl">
+			<h1 class="leading-1.1 text-3xl font-bold tracking-tighter drop-shadow-xl md:text-6xl">
 				#Jeepney<span class="text-muted line-through decoration-destructive decoration-wavy"
 					>Moder</span
 				>N<span class="text-muted line-through decoration-destructive decoration-wavy">iz</span
 				>ation
 			</h1>
 			<h1
-				class="leading-1.1 text-3xl font-bold tracking-tighter text-primary drop-shadow-lg md:text-5xl"
+				class="leading-1.1 text-2xl font-bold tracking-tighter text-primary drop-shadow-lg md:text-5xl"
 			>
 				Sentiments on Modernization
 			</h1>
-			<p class="text-md mb-6 max-w-[750px] text-muted-foreground md:text-lg">
+			<p class="mb-6 max-w-[750px] text-sm text-muted-foreground md:text-lg">
 				A Twitter analysis of Filipino reception towards Jeepney Modernization
 			</p>
 			<Carousel.Root
-				class="w-full max-w-xs md:max-w-2xl"
+				class="w-full max-w-xs sm:max-w-2xl"
 				plugins={[plugin]}
 				on:mouseenter={plugin.stop}
 				on:mouseleave={plugin.reset}
@@ -199,8 +199,8 @@
 						</Card.Root>
 					</Carousel.Item>
 				</Carousel.Content>
-				<Carousel.Previous class="hidden md:block"/>
-				<Carousel.Next class="hidden md:block"/>
+				<Carousel.Previous class="hidden md:flex" />
+				<Carousel.Next class="hidden md:flex" />
 			</Carousel.Root>
 		</div>
 	</section>
@@ -212,7 +212,7 @@
 		></div>
 
 		<p
-			class="z-20 max-w-[850px] md:text-3xl mx-16 text-2xl font-medium leading-tight hover:drop-shadow-2xl [&:not(:first-child)]:mt-6"
+			class="z-20 mx-16 max-w-[850px] text-2xl font-medium leading-tight hover:drop-shadow-2xl md:text-3xl [&:not(:first-child)]:mt-6"
 		>
 			Our project,
 			<span
@@ -224,7 +224,7 @@
 	</section>
 
 	<section
-		class="mx-auto flex h-full max-w-6xl grid-cols-2 flex-col items-center md:gap-16 gap-8 px-4 py-20 md:grid md:h-screen"
+		class="mx-auto flex h-full max-w-6xl grid-cols-2 flex-col items-center gap-8 px-4 py-20 md:grid md:h-screen md:gap-16"
 		id="overview"
 	>
 		<div>
@@ -446,7 +446,7 @@
 			>
 				Materials and Methods
 			</h1>
-			<div class="flex flex-row gap-4">
+			<div class="flex flex-col gap-4 sm:flex-row">
 				<a
 					href="https://docs.google.com/spreadsheets/d/12IpBDpizXs0iUv-_JWSdayhhISXB46U-ikx9F7g1sbY/edit#gid=0"
 					target="_blank"
@@ -746,10 +746,27 @@
 			<Collapsible.Content class="space-y-2">
 				<div class="px-4 py-3">
 					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
-						Following data visualization, we employed the Chi-Square Test to assess the relationship
-						between sentiment (for/against modernization) and average tweet interaction (likes,
-						retweets, etc.). This analysis aimed to uncover how public opinion on jeepney
-						modernization influences online engagement.
+						Following data visualization, we employed the Chi Squared Test of Independence to test
+						if the tweet sentiment is affected by time.
+					</p>
+
+					<ul class="my-6 ml-6 list-disc text-lg [&>li]:mt-2">
+						<li>
+							Null hypothesis (H<sub>0</sub>): The ratio of positive to negative tweets is constant
+							throughout the study period. (Tweet sentiment is independent of time)
+						</li>
+						<li>
+							Alternative hypothesis (H<sub>a</sub>): The ratio of positive to negative tweets
+							significantly changes throughout the study period. (Tweet sentiment is dependent on
+							time)
+						</li>
+					</ul>
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
+						We formed groups of 5 for the number of tweets per sentiment per month to meet the
+						requirement of the statement: (<code
+							class="text-md relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold text-green-700 dark:text-green-300"
+							>observed >= 5</code
+						>)
 					</p>
 				</div>
 			</Collapsible.Content>
@@ -908,7 +925,7 @@
 				<div
 					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
-					<HoverCard.Root >
+					<HoverCard.Root>
 						<HoverCard.Trigger>
 							<div class="mb-4 flex justify-center">
 								<Avatar.Root>

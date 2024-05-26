@@ -10,7 +10,7 @@
 <header
 	class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
 >
-	<div class="container flex h-14 max-w-screen-2xl items-center">
+	<div class="container flex h-14 max-w-screen items-center">
 		<div class="bg-slate mr-4 flex flex-row">
 			<a href={base} class="mr-6 flex items-center">
 				<img
@@ -19,7 +19,7 @@
 					class="h-8 w-auto">
 				<!-- <p class="font-bold text-primary">JeepneyNation</p> -->
 			</a>
-			<nav class="flex items-center text-center gap-6 text-sm">
+			<nav class="sm:flex items-center text-center gap-6 text-sm hidden">
 				<a
 					href={`${base}#overview`}
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Overview</a
