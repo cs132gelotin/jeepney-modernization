@@ -48,7 +48,7 @@
 			>
 				Sentiments on PUVMP
 			</h1>
-			<p class="mb-6 sm:max-w-[750px] max-w-[350px ]text-sm text-muted-foreground sm:text-lg">
+			<p class="max-w-[350px ]text-sm mb-6 text-muted-foreground sm:max-w-[750px] sm:text-lg">
 				A Twitter analysis of Filipino reception towards Jeepney Modernization
 			</p>
 			<Carousel.Root
@@ -475,55 +475,55 @@
 				</h2>
 				<div class="flex max-w-4xl flex-wrap items-center justify-center gap-x-4 gap-y-3">
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>electric</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>jeep</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>jeepney</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>jeepney modernization</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>jeepney phaseout</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>modern</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>modernisasyon</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>modernization</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>phaseout</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>puv</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>puv modernization</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>puv phaseout</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 text-lg font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
 						>strike</button
 					>
 				</div>
@@ -568,7 +568,10 @@
 			<Collapsible.Trigger asChild let:builder>
 				<div class="flex items-center justify-between space-x-4 px-4">
 					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
-						<h4 class="text-3xl font-semibold">Natural Language Processing</h4>
+						<div class="flex-col">
+							<h4 class="hidden text-2xl font-semibold sm:flex">Natural Language Processing</h4>
+							<h4 class="flex text-2xl font-semibold sm:hidden text-left">Natural Language<br />Processing</h4>
+						</div>
 					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
 						<ChevronsUpDown class="h-4 w-4" />
@@ -649,7 +652,7 @@
 			<Collapsible.Trigger asChild let:builder>
 				<div class="flex items-center justify-between space-x-4 px-4">
 					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
-						<h4 class="text-3xl font-semibold">Visualization</h4>
+						<h4 class="text-2xl font-semibold">Visualization</h4>
 					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
 						<ChevronsUpDown class="h-4 w-4" />
@@ -741,7 +744,7 @@
 			<Collapsible.Trigger asChild let:builder>
 				<div class="flex items-center justify-between space-x-4 px-4">
 					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
-						<h4 class="text-3xl font-semibold">Testing</h4>
+						<h4 class="text-2xl font-semibold">Testing</h4>
 					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
 						<ChevronsUpDown class="h-4 w-4" />
