@@ -37,18 +37,18 @@
 		<div
 			class="min-h-screen-minus-navbar mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
 		>
-			<h1 class="leading-1.1 text-3xl font-bold tracking-tighter drop-shadow-xl md:text-6xl">
+			<h1 class="leading-1.1 text-3xl font-bold tracking-tighter drop-shadow-xl sm:text-6xl">
 				#Jeepney<span class="text-muted line-through decoration-destructive decoration-wavy"
 					>Moder</span
 				>N<span class="text-muted line-through decoration-destructive decoration-wavy">iz</span
 				>ation
 			</h1>
 			<h1
-				class="leading-1.1 text-2xl font-bold tracking-tighter text-primary drop-shadow-lg md:text-5xl"
+				class="leading-1.1 text-2xl font-bold tracking-tighter text-primary drop-shadow-lg sm:text-5xl"
 			>
-				Sentiments on Modernization
+				Sentiments on PUVMP
 			</h1>
-			<p class="mb-6 max-w-[750px] text-sm text-muted-foreground md:text-lg">
+			<p class="mb-6 sm:max-w-[750px] max-w-[350px ]text-sm text-muted-foreground sm:text-lg">
 				A Twitter analysis of Filipino reception towards Jeepney Modernization
 			</p>
 			<Carousel.Root
@@ -565,15 +565,17 @@
 			</div>
 		</div>
 		<Collapsible.Root class="mt-4 w-full space-y-4">
-			<div class="flex items-center justify-between space-x-4 px-4">
-				<h4 class="text-3xl font-semibold">Natural Language Processing</h4>
-				<Collapsible.Trigger asChild let:builder>
+			<Collapsible.Trigger asChild let:builder>
+				<div class="flex items-center justify-between space-x-4 px-4">
+					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
+						<h4 class="text-3xl font-semibold">Natural Language Processing</h4>
+					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
 						<ChevronsUpDown class="h-4 w-4" />
 						<span class="sr-only">Toggle</span>
 					</Button>
-				</Collapsible.Trigger>
-			</div>
+				</div>
+			</Collapsible.Trigger>
 			<Collapsible.Content class="space-y-2">
 				<div class="px-4 py-3">
 					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
@@ -606,8 +608,8 @@
 							converted into formal words to improve the accuracy of the translation.
 						</li>
 						<li class="text-lg leading-7">
-							<span class="font-bold">Lemmatization:</span> Specific non-English terms and groups of
-							special category words were lemmatized.
+							<span class="font-bold">Tokenization:</span> Tweets are broken down into words or phrases
+							according to what's more appropriate for the analysis.
 						</li>
 					</ol>
 					<h5
@@ -644,15 +646,17 @@
 		</Collapsible.Root>
 		<Separator />
 		<Collapsible.Root class="w-full space-y-4">
-			<div class="flex items-center justify-between space-x-4 px-4">
-				<h4 class="text-3xl font-semibold">Visualization</h4>
-				<Collapsible.Trigger asChild let:builder>
+			<Collapsible.Trigger asChild let:builder>
+				<div class="flex items-center justify-between space-x-4 px-4">
+					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
+						<h4 class="text-3xl font-semibold">Visualization</h4>
+					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
 						<ChevronsUpDown class="h-4 w-4" />
 						<span class="sr-only">Toggle</span>
 					</Button>
-				</Collapsible.Trigger>
-			</div>
+				</div>
+			</Collapsible.Trigger>
 			<Collapsible.Content class="space-y-2">
 				<div class="px-4 py-3">
 					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
@@ -734,15 +738,17 @@
 		</Collapsible.Root>
 		<Separator />
 		<Collapsible.Root class="w-full space-y-4">
-			<div class="flex items-center justify-between space-x-4 px-4">
-				<h4 class="text-3xl font-semibold">Testing</h4>
-				<Collapsible.Trigger asChild let:builder>
+			<Collapsible.Trigger asChild let:builder>
+				<div class="flex items-center justify-between space-x-4 px-4">
+					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
+						<h4 class="text-3xl font-semibold">Testing</h4>
+					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
 						<ChevronsUpDown class="h-4 w-4" />
 						<span class="sr-only">Toggle</span>
 					</Button>
-				</Collapsible.Trigger>
-			</div>
+				</div>
+			</Collapsible.Trigger>
 			<Collapsible.Content class="space-y-2">
 				<div class="px-4 py-3">
 					<p class="text-lg leading-7 [&:not(:first-child)]:mt-6">
@@ -768,6 +774,39 @@
 							>observed >= 5</code
 						>)
 					</p>
+					<ul class="my-6 ml-6 list-disc text-lg [&>li]:mt-2">
+						<li>
+							Chi-Square Statistic: <span
+								class="text-md relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold"
+								>14.120520497226948</span
+							>
+						</li>
+						<li>
+							P-value: <span
+								class="text-md relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold"
+								>0.014861708645671878
+							</span>
+						</li>
+						<li>
+							Degrees of Freedom: <span
+								class="text-md relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold"
+								>5
+							</span>
+						</li>
+						<li>
+							Expected Frequency: <span
+								class="text-md relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold"
+								>[[ 24.82399103 96.17600897] [ 10.25784753 39.74215247] [ 44.10874439 170.89125561]
+								[ 13.95067265 54.04932735] [ 55.80269058 216.19730942] [ 34.05605381 131.94394619]]
+							</span>
+						</li>
+						<li>
+							Decision: <span
+								class="text-md relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold"
+								>p&lt;=0.05, <span class="font-bold text-red-500"> Reject Null Hypothesis </span>
+							</span>
+						</li>
+					</ul>
 				</div>
 			</Collapsible.Content>
 		</Collapsible.Root>
