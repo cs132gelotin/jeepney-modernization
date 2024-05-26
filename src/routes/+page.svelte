@@ -5,10 +5,12 @@
 	import * as Card from '$lib/components/ui/card';
 	import * as HoverCard from '$lib/components/ui/hover-card/index.js';
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
+	import * as Dialog from '$lib/components/ui/dialog/index.js';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import Navigation from '$lib/Navigation.svelte';
 	import ChevronsUpDown from 'lucide-svelte/icons/chevrons-up-down';
+	import Database from 'lucide-svelte/icons/database';
 	import jeep1 from '$lib/assets/jeep1.jpg';
 	import RQ1 from '$lib/assets/RQ1.png';
 	import RQ2 from '$lib/assets/RQ2.png';
@@ -440,14 +442,25 @@
 			<h1 class="font-jeep text-7xl uppercase tracking-tight text-green-500 drop-shadow-lg">
 				Materials and Methods
 			</h1>
-			<a
-				href="https://docs.google.com/spreadsheets/d/12IpBDpizXs0iUv-_JWSdayhhISXB46U-ikx9F7g1sbY/edit#gid=0"
-				target="_blank"
-				rel="noreferrer noopener"
-				class={buttonVariants({ variant: 'outline' })}
-				><i class="fa-solid fa-up-right-from-square mr-2"></i>
-				<p class="">Explore the dataset here</p></a
-			>
+			<div class="flex flex-row gap-4">
+				<a
+					href="https://docs.google.com/spreadsheets/d/12IpBDpizXs0iUv-_JWSdayhhISXB46U-ikx9F7g1sbY/edit#gid=0"
+					target="_blank"
+					rel="noreferrer noopener"
+					class={buttonVariants({ variant: 'outline' })}
+				>
+					<Database class="mr-2 h-4 w-4" />
+					<p class="">Explore the dataset here</p></a
+				>
+				<a
+					href="https://colab.research.google.com/drive/1_0Ua2sbmbo0mzbNshLNY-L0tHrWosjAW?authuser=1#scrollTo=H2QHb34dorUC"
+					target="_blank"
+					rel="noreferrer noopener"
+					class={buttonVariants({ variant: 'outline' })}
+					><i class="fa-solid fa-up-right-from-square mr-2"></i>
+					<p class="">View our data exploration here</p></a
+				>
+			</div>
 		</div>
 		<div class="grid auto-rows-auto grid-cols-6 gap-8">
 			<div
@@ -657,11 +670,27 @@
 						modernization loomed on December 31st. The subsequent extension of the deadline to
 						<span class="font-semibold">April 2024</span> triggered another rise in tweet frequency.
 					</p>
-					<img
-						src={RQ1}
-						alt="Monthly Number of Tweets"
-						class="mt-4 w-full rounded-lg object-cover"
-					/>
+					<Dialog.Root>
+						<Dialog.Trigger
+							><img
+								src={RQ1}
+								alt="Monthly Number of Tweets"
+								class="mt-4 w-full rounded-lg object-cover"
+							/></Dialog.Trigger
+						>
+						<Dialog.Content class="max-w-screen">
+							<Dialog.Header>
+								<Dialog.Title>Monthly Number of Tweets</Dialog.Title>
+							</Dialog.Header>
+							<div class="grid gap-4 py-4">
+								<img
+									src={RQ1}
+									alt="Monthly Number of Tweets"
+									class="mt-4 w-full rounded-lg object-cover"
+								/>
+							</div>
+						</Dialog.Content>
+					</Dialog.Root>
 					<h5
 						class="text-xl font-bold leading-7 decoration-2 hover:underline [&:not(:first-child)]:mt-6"
 					>
@@ -675,11 +704,27 @@
 						sentiment regarding jeepney modernization is also evident, with terms like "no to
 						jeepney phaseout" standing out.
 					</p>
-					<img
-						src={RQ2}
-						alt="Most Frequently Used Words"
-						class="mt-4 w-full rounded-lg object-cover"
-					/>
+					<Dialog.Root>
+						<Dialog.Trigger>
+							<img
+								src={RQ2}
+								alt="Most Frequently Used Words"
+								class="mt-4 w-full rounded-lg object-cover"
+							/></Dialog.Trigger
+						>
+						<Dialog.Content class="max-w-screen">
+							<Dialog.Header>
+								<Dialog.Title>Monthly Number of Tweets</Dialog.Title>
+							</Dialog.Header>
+							<div class="grid gap-4 py-4">
+								<img
+									src={RQ2}
+									alt="Most Frequently Used Words"
+									class="mt-4 w-full rounded-lg object-cover"
+								/>
+							</div>
+						</Dialog.Content>
+					</Dialog.Root>
 				</div>
 			</Collapsible.Content>
 		</Collapsible.Root>
