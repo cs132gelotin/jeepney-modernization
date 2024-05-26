@@ -19,7 +19,7 @@
 					class="h-8 w-auto">
 				<!-- <p class="font-bold text-primary">JeepneyNation</p> -->
 			</a>
-			<nav class="flex items-center gap-6 text-sm">
+			<nav class="flex items-center text-center gap-6 text-sm">
 				<a
 					href={`${base}#overview`}
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Overview</a
@@ -39,7 +39,7 @@
 				>
 			</nav>
 		</div>
-		<nav class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+		<nav class="flex flex-1 items-center space-x-2 justify-end">
 			<Button
 				variant="outline"
 				size="icon"

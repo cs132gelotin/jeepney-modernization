@@ -37,20 +37,22 @@
 		<div
 			class="min-h-screen-minus-navbar mx-auto flex max-w-6xl flex-col items-center justify-center gap-2 py-16 pt-12 text-center"
 		>
-			<h1 class="leading-1.1 text-6xl font-bold tracking-tighter drop-shadow-xl">
+			<h1 class="leading-1.1 text-4xl font-bold tracking-tighter drop-shadow-xl md:text-6xl">
 				#Jeepney<span class="text-muted line-through decoration-destructive decoration-wavy"
 					>Moder</span
 				>N<span class="text-muted line-through decoration-destructive decoration-wavy">iz</span
 				>ation
 			</h1>
-			<h1 class="leading-1.1 text-5xl font-bold tracking-tighter text-primary drop-shadow-lg">
+			<h1
+				class="leading-1.1 text-3xl font-bold tracking-tighter text-primary drop-shadow-lg md:text-5xl"
+			>
 				Sentiments on Modernization
 			</h1>
-			<p class="mb-6 max-w-[750px] text-lg text-muted-foreground">
+			<p class="text-md mb-6 max-w-[750px] text-muted-foreground md:text-lg">
 				A Twitter analysis of Filipino reception towards Jeepney Modernization
 			</p>
 			<Carousel.Root
-				class="w-full max-w-2xl"
+				class="w-full max-w-xs md:max-w-2xl"
 				plugins={[plugin]}
 				on:mouseenter={plugin.stop}
 				on:mouseleave={plugin.reset}
@@ -197,8 +199,8 @@
 						</Card.Root>
 					</Carousel.Item>
 				</Carousel.Content>
-				<Carousel.Previous />
-				<Carousel.Next />
+				<Carousel.Previous class="hidden md:block"/>
+				<Carousel.Next class="hidden md:block"/>
 			</Carousel.Root>
 		</div>
 	</section>
@@ -210,7 +212,7 @@
 		></div>
 
 		<p
-			class="z-20 max-w-[850px] text-3xl font-medium leading-tight hover:drop-shadow-2xl [&:not(:first-child)]:mt-6"
+			class="z-20 max-w-[850px] md:text-3xl mx-16 text-2xl font-medium leading-tight hover:drop-shadow-2xl [&:not(:first-child)]:mt-6"
 		>
 			Our project,
 			<span
@@ -222,7 +224,7 @@
 	</section>
 
 	<section
-		class="mx-auto grid h-screen max-w-6xl grid-cols-2 items-center gap-16 px-4 py-20"
+		class="mx-auto flex h-full max-w-6xl grid-cols-2 flex-col items-center md:gap-16 gap-8 px-4 py-20 md:grid md:h-screen"
 		id="overview"
 	>
 		<div>
@@ -269,7 +271,7 @@
 					Problem
 				</h1>
 			</div>
-			<div class="grid auto-rows-auto grid-cols-4 gap-8">
+			<div class="flex auto-rows-auto grid-cols-4 flex-col gap-8 md:grid">
 				<div
 					class="col-span-4 row-span-2 rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 				>
@@ -439,7 +441,9 @@
 			>
 				03
 			</h1>
-			<h1 class="font-jeep text-7xl uppercase tracking-tight text-green-500 drop-shadow-lg">
+			<h1
+				class="text-right font-jeep text-7xl uppercase tracking-tight text-green-500 drop-shadow-lg"
+			>
 				Materials and Methods
 			</h1>
 			<div class="flex flex-row gap-4">
@@ -462,7 +466,7 @@
 				>
 			</div>
 		</div>
-		<div class="grid auto-rows-auto grid-cols-6 gap-8">
+		<div class="flex auto-rows-auto grid-cols-6 flex-col gap-8 md:grid">
 			<div
 				class="group col-span-6 flex flex-col items-center gap-4 rounded-3xl bg-secondary bg-cover bg-bottom p-8 drop-shadow-lg duration-100 ease-in hover:bg-jeep3 hover:shadow-2xl"
 			>
@@ -682,7 +686,7 @@
 							<Dialog.Header>
 								<Dialog.Title>Monthly Number of Tweets</Dialog.Title>
 							</Dialog.Header>
-							<div class="grid gap-4 py-4">
+							<div class="flex flex-col gap-4 py-4 md:grid">
 								<img
 									src={RQ1}
 									alt="Monthly Number of Tweets"
@@ -716,7 +720,7 @@
 							<Dialog.Header>
 								<Dialog.Title>Monthly Number of Tweets</Dialog.Title>
 							</Dialog.Header>
-							<div class="grid gap-4 py-4">
+							<div class="flex flex-col gap-4 py-4 md:grid">
 								<img
 									src={RQ2}
 									alt="Most Frequently Used Words"
@@ -767,7 +771,7 @@
 					Who are we?
 				</h1>
 			</div>
-			<div class="grid auto-rows-auto grid-cols-6 gap-8">
+			<div class="flex auto-rows-auto grid-cols-6 flex-col gap-8 md:grid">
 				<div
 					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
@@ -796,6 +800,16 @@
 							</div></HoverCard.Content
 						>
 					</HoverCard.Root>
+					<div class="mt-2 flex flex-1 items-center justify-center space-x-2 md:hidden">
+						<Button
+							variant="outline"
+							size="icon"
+							href="mailto:jcgonzales12@up.edu.ph"
+							target="_blank"
+						>
+							<i class="fa-solid fa-envelope fa-lg"></i>
+						</Button>
+					</div>
 					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
 						I'm Justin, a 2nd year BS Computer Science student at the University of the Philippines,
 						Diliman. With my interest in Computers and Technology, I am currently finding my passion
@@ -851,6 +865,32 @@
 							</div></HoverCard.Content
 						>
 					</HoverCard.Root>
+					<div class="mt-2 flex flex-1 items-center justify-center space-x-2 md:hidden">
+						<Button
+							variant="outline"
+							size="icon"
+							href="mailto:gaconvento@up.edu.ph"
+							target="_blank"
+						>
+							<i class="fa-solid fa-envelope fa-lg"></i>
+						</Button>
+						<Button
+							variant="outline"
+							size="icon"
+							href="https://github.com/conventoangelo"
+							target="_blank"
+						>
+							<i class="fa-brands fa-github fa-lg"></i>
+						</Button>
+						<Button
+							variant="outline"
+							size="icon"
+							href="https://www.linkedin.com/in/conventoangelo/"
+							target="_blank"
+						>
+							<i class="fa-brands fa-linkedin fa-lg"></i>
+						</Button>
+					</div>
 					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
 						Hey there! I'm Gelo, a 4th year BS Computer Science student at UP Diliman with a passion
 						for front-end web development. I'm particularly interested in frameworks like Svelte and
@@ -868,7 +908,7 @@
 				<div
 					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
-					<HoverCard.Root>
+					<HoverCard.Root >
 						<HoverCard.Trigger>
 							<div class="mb-4 flex justify-center">
 								<Avatar.Root>
@@ -893,6 +933,11 @@
 							</div></HoverCard.Content
 						>
 					</HoverCard.Root>
+					<div class="mt-2 flex flex-1 items-center justify-center space-x-2 md:hidden">
+						<Button variant="outline" size="icon" href="mailto:apdeleon4@up.edu.ph" target="_blank">
+							<i class="fa-solid fa-envelope fa-lg"></i>
+						</Button>
+					</div>
 					<p class="text-md leading-7 group-hover:text-white [&:not(:first-child)]:mt-6">
 						Hi! I'm Gelo, a 2nd year Computer Science student from the University of the
 						Philippines. Having the interest for both programming and graphic design, I became
