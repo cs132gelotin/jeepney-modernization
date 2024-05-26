@@ -10,6 +10,8 @@
 	import Navigation from '$lib/Navigation.svelte';
 	import ChevronsUpDown from 'lucide-svelte/icons/chevrons-up-down';
 	import jeep1 from '$lib/assets/jeep1.jpg';
+	import RQ1 from '$lib/assets/RQ1.png';
+	import RQ2 from '$lib/assets/RQ2.png';
 	import GCAvatar from '$lib/assets/_DSC3637_512x512.png';
 	import ADAvatar from '$lib/assets/435194078_981985919488202_6376095500813041272_n.png';
 	import JGAvatar from '$lib/assets/435201424_342404608842278_1262981411790175769_n.jpg';
@@ -545,7 +547,7 @@
 				</p>
 			</div>
 		</div>
-		<Collapsible.Root class="w-full space-y-4">
+		<Collapsible.Root class="mt-4 w-full space-y-4">
 			<div class="flex items-center justify-between space-x-4 px-4">
 				<h4 class="text-3xl font-semibold">Natural Language Processing</h4>
 				<Collapsible.Trigger asChild let:builder>
@@ -642,6 +644,42 @@
 						into readily comprehensible graphs and charts. This visual approach fosters a clear
 						understanding of the data for a broader audience.
 					</p>
+					<h5
+						class="text-xl font-bold leading-7 decoration-2 hover:underline [&:not(:first-child)]:mt-6"
+					>
+						Frequency of Tweets about Jeepney Modernization
+					</h5>
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-3">
+						The frequency of tweets about jeepney modernization in the Philippines saw a distinct
+						peak in <span class="font-semibold">March 2023</span>. This initial surge subsided, but
+						the conversation reignited in
+						<span class="font-semibold">December 2023</span> as the deadline for jeepney
+						modernization loomed on December 31st. The subsequent extension of the deadline to
+						<span class="font-semibold">April 2024</span> triggered another rise in tweet frequency.
+					</p>
+					<img
+						src={RQ1}
+						alt="Monthly Number of Tweets"
+						class="mt-4 w-full rounded-lg object-cover"
+					/>
+					<h5
+						class="text-xl font-bold leading-7 decoration-2 hover:underline [&:not(:first-child)]:mt-6"
+					>
+						NLP Word Frequency Visualization
+					</h5>
+					<p class="text-lg leading-7 [&:not(:first-child)]:mt-3">
+						Building on the previous graph that highlighted peak tweet volume in March 2023,
+						December 2023, and April 2024, this NLP Word Frequency Visualization delves deeper into
+						the sentiment expressed during those periods. Notably, March 2023 appears to have a
+						higher concentration of positive terms compared to the other months. However, negative
+						sentiment regarding jeepney modernization is also evident, with terms like "no to
+						jeepney phaseout" standing out.
+					</p>
+					<img
+						src={RQ2}
+						alt="Most Frequently Used Words"
+						class="mt-4 w-full rounded-lg object-cover"
+					/>
 				</div>
 			</Collapsible.Content>
 		</Collapsible.Root>
