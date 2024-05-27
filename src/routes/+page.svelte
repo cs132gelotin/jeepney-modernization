@@ -690,9 +690,6 @@
 							/></Dialog.Trigger
 						>
 						<Dialog.Content class="max-w-screen">
-							<Dialog.Header>
-								<Dialog.Title>Monthly Number of Tweets</Dialog.Title>
-							</Dialog.Header>
 							<div class="flex flex-col gap-4 py-4 md:grid">
 								<img
 									src={RQ1}
@@ -724,9 +721,6 @@
 							/></Dialog.Trigger
 						>
 						<Dialog.Content class="max-w-screen">
-							<Dialog.Header>
-								<Dialog.Title>Monthly Number of Tweets</Dialog.Title>
-							</Dialog.Header>
 							<div class="flex flex-col gap-4 py-4 md:grid">
 								<img
 									src={RQ2}
