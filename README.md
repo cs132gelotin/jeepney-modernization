@@ -1,5 +1,7 @@
 # \#JeepneyNation
 
+![Natshel Image](static\natshel.png)
+
 Our project, Twitter Analysis on the PUV Modernization Program, aims to study Twitter data related to the issue. It attempts to analyze and understand the general opinion and perspective of people about the PUV Modernization Program.
 
 ## Overview
@@ -61,3 +63,57 @@ After collection and pre-processing, the data will undergo exploratory analysis 
 11. puv modernization
 12. puv phaseout
 13. strike
+
+### Natural Language Processing
+
+The tweets were processed using Natural Language Processing (NLP) techniques. However, due to the Filipino language content, additional steps were required:
+
+1. **Translation**: The Filipino content was translated into English using GoogleTrans. This was necessary to ensure the accuracy of the subsequent NLP steps.
+2. **Manual Checking**: The translated content was manually checked to ensure the accuracy of the translation. This was important to maintain the context and meaning of the original content.
+
+#### Cleaning the Filipino Tweets
+
+The Filipino content required additional cleaning to improve the accuracy of the translation. This involved:
+
+1. **Changing Filipino Slang**: Filipino slang and shorthand were converted into formal words to improve the accuracy of the translation.
+2. **Tokenization**: Tweets are broken down into words or phrases according to what's more appropriate for the analysis.
+
+#### Translating the Tweets
+
+GoogleTrans was used to translate the cleaned Filipino content into English. The translated content was then further cleaned by:
+
+1. **Lowercasing**: All the translated content was converted to lowercase to maintain consistency.
+2. **Removing Punctuation Marks**: All punctuation marks were removed from the translated content to simplify the subsequent NLP steps.
+
+#### Manual Correction of the Translation
+
+The translated tweets was manually checked and corrected to improve the context accuracy, fix erroneous spacing, and catch mistakes. The manually corrected tweets was then used in the subsequent analysis.
+
+### Visualization
+
+Effective communication of research findings extends beyond mere textual presentation. Recognizing this, we leveraged the power of data visualization to transform our insights into readily comprehensible graphs and charts. This visual approach fosters a clear understanding of the data for a broader audience.
+
+#### Frequency of Tweets about Jeepney Modernization
+
+![Monthly Number of Tweets](src\lib\assets\RQ1.png)
+The frequency of tweets about jeepney modernization in the Philippines saw a distinct peak in **March 2023**. This initial surge subsided, but the conversation reignited in **December 2023** as the deadline for jeepney modernization loomed on December 31st. The subsequent extension of the deadline to **April 2024** triggered another rise in tweet frequency.
+
+#### NLP Word Frequency Visualization
+
+![Most Frequently Used Words](src\lib\assets\RQ2.png)
+Building on the previous graph that highlighted peak tweet volume in March 2023, December 2023, and April 2024, this NLP Word Frequency Visualization delves deeper into the sentiment expressed during those periods. Notably, March 2023 appears to have a higher concentration of positive terms compared to the other months. However, negative sentiment regarding jeepney modernization is also evident, with terms like "no to jeepney phaseout" standing out.
+
+### Testing
+
+Following data visualization, we employed the Chi Squared Test of Independence to test if the tweet sentiment is affected by time.
+
+- Null hypothesis (H0): The ratio of positive to negative tweets is constant throughout the study period. (Tweet sentiment is independent of time)
+- Alternative hypothesis (Ha): The ratio of positive to negative tweets significantly changes throughout the study period. (Tweet sentiment is dependent on time)
+
+We formed groups of 5 for the number of tweets per sentiment per month to meet the requirement of the statement: (`observed >= 5`)
+
+- Chi-Square Statistic: `14.120520497226948`
+- P-value: `0.014861708645671878`
+- Degrees of Freedom: `5`
+- Expected Frequency: `[[ 24.82399103 96.17600897] [ 10.25784753 39.74215247] [ 44.10874439 170.89125561] [ 13.95067265 54.04932735] [ 55.80269058 216.19730942] [ 34.05605381 131.94394619]]`
+- Decision: p<=0.05, **Reject Null Hypothesis**
