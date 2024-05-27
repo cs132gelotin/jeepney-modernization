@@ -446,7 +446,7 @@
 			>
 				Materials and Methods
 			</h1>
-			<div class="flex flex-col gap-4 sm:flex-row">
+			<div class="flex flex-col gap-4 sm:flex-row items-end">
 				<a
 					href="https://docs.google.com/spreadsheets/d/12IpBDpizXs0iUv-_JWSdayhhISXB46U-ikx9F7g1sbY/edit#gid=0"
 					target="_blank"
@@ -454,7 +454,7 @@
 					class={buttonVariants({ variant: 'outline' })}
 				>
 					<Database class="mr-2 h-4 w-4" />
-					<p class="">Explore the dataset here</p></a
+					<p class="justify-end">Explore the dataset here</p></a
 				>
 				<a
 					href="https://colab.research.google.com/drive/1_0Ua2sbmbo0mzbNshLNY-L0tHrWosjAW?authuser=1#scrollTo=H2QHb34dorUC"
