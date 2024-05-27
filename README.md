@@ -1,6 +1,6 @@
 # \#JeepneyNation
 
-![Natshel Image](static\natshel.png)
+![Natshel Image](static/natshel.png)
 
 Our project, Twitter Analysis on the PUV Modernization Program, aims to study Twitter data related to the issue. It attempts to analyze and understand the general opinion and perspective of people about the PUV Modernization Program.
 
@@ -95,12 +95,12 @@ Effective communication of research findings extends beyond mere textual present
 
 #### Frequency of Tweets about Jeepney Modernization
 
-![Monthly Number of Tweets](src\lib\assets\RQ1.png)
+![Monthly Number of Tweets](src/lib/assets/RQ1.png)
 The frequency of tweets about jeepney modernization in the Philippines saw a distinct peak in **March 2023**. This initial surge subsided, but the conversation reignited in **December 2023** as the deadline for jeepney modernization loomed on December 31st. The subsequent extension of the deadline to **April 2024** triggered another rise in tweet frequency.
 
 #### NLP Word Frequency Visualization
 
-![Most Frequently Used Words](src\lib\assets\RQ2.png)
+![Most Frequently Used Words](src/lib/assets/RQ2.png)
 Building on the previous graph that highlighted peak tweet volume in March 2023, December 2023, and April 2024, this NLP Word Frequency Visualization delves deeper into the sentiment expressed during those periods. Notably, March 2023 appears to have a higher concentration of positive terms compared to the other months. However, negative sentiment regarding jeepney modernization is also evident, with terms like "no to jeepney phaseout" standing out.
 
 ### Testing
