@@ -35,8 +35,8 @@
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Machine Learning</a
 				>
 				<a
-					href={`${base}#interpretation`}
-					class="text-foreground/60 transition-colors hover:text-foreground/80">Interpretation</a
+					href={`${base}#results`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Results</a
 				>
 				<a
 					href={`${base}#conclusion`}

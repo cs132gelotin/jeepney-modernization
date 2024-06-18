@@ -12,8 +12,14 @@
 	import ChevronsUpDown from 'lucide-svelte/icons/chevrons-up-down';
 	import Database from 'lucide-svelte/icons/database';
 	import jeep1 from '$lib/assets/jeep1.jpg';
+	import jeep4 from '$lib/assets/jeep4.jpg';
 	import RQ1 from '$lib/assets/RQ1.png';
 	import RQ2 from '$lib/assets/RQ2.png';
+	import topic1 from '$lib/assets/topic1.png';
+	import topic2 from '$lib/assets/topic2.png';
+	import topic3 from '$lib/assets/topic3.png';
+	import topic4 from '$lib/assets/topic4.png';
+	import topic5 from '$lib/assets/topic5.png';
 	import GCAvatar from '$lib/assets/_DSC3637_512x512.png';
 	import ADAvatar from '$lib/assets/435194078_981985919488202_6376095500813041272_n.png';
 	import JGAvatar from '$lib/assets/435201424_342404608842278_1262981411790175769_n.jpg';
@@ -829,13 +835,14 @@
 					Machine Learning
 				</h1>
 				<Button variant="outline"
-				><a class="flex items-center justify-center space-x-2"
-					target="_blank"
-					href="https://colab.research.google.com/drive/1iF-sZdCyK_fl5Yoye69RGQGlZGINgaLe#scrollTo=E2Kr_i1uxfkW&line=3&uniqifier=1"
-					><i class="fa-solid fa-up-right-from-square"></i>
-					<p class="">View the LDA model here</p></a
-				></Button
-			>
+					><a
+						class="flex items-center justify-center space-x-2"
+						target="_blank"
+						href="https://colab.research.google.com/drive/1iF-sZdCyK_fl5Yoye69RGQGlZGINgaLe#scrollTo=E2Kr_i1uxfkW&line=3&uniqifier=1"
+						><i class="fa-solid fa-chart-simple"></i>
+						<p class="">View the LDA model here</p></a
+					></Button
+				>
 			</div>
 			<div
 				class="rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
@@ -855,6 +862,473 @@
 		</div>
 	</section>
 
+	<section class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20" id="results">
+		<div class="flex auto-rows-auto grid-cols-3 flex-col gap-8 md:grid">
+			<div class="col-span-full">
+				<h1
+					class="font-jeepney text-8xl font-extrabold tracking-tight text-yellow-400 drop-shadow-md dark:text-green-400"
+				>
+					05
+				</h1>
+				<h1
+					class="font-jeep text-7xl uppercase tracking-tight text-pink-600 drop-shadow-lg dark:text-orange-500"
+				>
+					Results
+				</h1>
+			</div>
+			<div
+				class="col-span-1 row-auto rounded-3xl bg-secondary
+				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
+					Research Question 1 (Graph 1)
+				</h2>
+				<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+					What is the general reaction of the population regarding the PUV Modernization Program?
+				</h4>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					Looking at the tweets from the range of months taken, the number of tweets with negative
+					sentiments is evidently the highest out of the three classifications for each of these
+					months. From this observation, we can safely say that the general reaction of the
+					population regarding the PUV Modernization Program is mostly negative.
+				</p>
+			</div>
+			<div
+				class="col-span-1 row-auto rounded-3xl bg-secondary
+				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">Research Question 1 (ML)</h2>
+
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					Analysis of the topic clustering shows that tweets concerning all of the topics are either
+					mixed or negative. This implies that the negative sentiment is much more prominent
+					compared to the positive and neutral sentiments.
+				</p>
+			</div>
+			<div
+				class="col-span-1 row-auto rounded-3xl bg-secondary
+				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
+					Research Question 2 (Graph 2)
+				</h2>
+				<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+					What are the frequent words used when the user activity increases?
+				</h4>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					Observing which months have the highest number of tweets, we found that March 2023,
+					December 2023, and April 2024 have the highest user activity. From these three months the
+					most frequent words from tweets with positive sentiments are modernization, jeepney, and
+					PUV. The most frequent words from tweets with negative sentiments are jeepney, drivers,
+					modernization, and notojeepneyphaseout.
+				</p>
+			</div>
+			<div
+				class="group col-span-full row-auto rounded-3xl
+				bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">Machine Learning Model</h2>
+				<Collapsible.Root class="mt-4 w-full space-y-4">
+					<Collapsible.Trigger asChild let:builder>
+						<div class="flex items-center justify-between space-x-4 px-4">
+							<Button builders={[builder]} variant="link" class="p-0">
+								<div class="flex-col">
+									<h3
+										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+									>
+										Topic 1
+									</h3>
+								</div>
+							</Button>
+							<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+								<ChevronsUpDown class="h-4 w-4" />
+								<span class="sr-only">Toggle</span>
+							</Button>
+						</div>
+					</Collapsible.Trigger>
+					<Collapsible.Content class="space-y-2">
+						<div class="px-4 py-3">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+								Phaseout, manila, class, said, bill, answer, transport, someth, electr, continue,
+								program, save, project, maybe, instead
+							</h4>
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+								“Jeepney Modernization Program Overview”
+							</h4>
+							<p class="text-md leading-7">
+								This topic appears to cover general discussions about the jeepney modernization
+								program, including the transition to electric vehicles, ongoing projects,
+								legislative aspects (bills), and potential alternatives to the current plans.
+							</p>
+							<div class="mt-4 flex w-full items-center justify-center">
+								<Dialog.Root>
+									<Dialog.Trigger
+										><img
+											src={topic1}
+											alt="Number of Tweets by Sentiment"
+											class="w-full max-w-2xl rounded-lg object-cover"
+										/></Dialog.Trigger
+									>
+									<Dialog.Content class="max-w-6xl">
+										<div class="flex flex-col gap-4 py-4 md:grid">
+											<img
+												src={topic1}
+												alt="Number of Tweets by Sentiment"
+												class="w-full rounded-lg object-cover"
+											/>
+										</div>
+									</Dialog.Content>
+								</Dialog.Root>
+							</div>
+						</div>
+					</Collapsible.Content>
+				</Collapsible.Root>
+				<Separator class="my-4" />
+				<Collapsible.Root class="mt-4 w-full space-y-4">
+					<Collapsible.Trigger asChild let:builder>
+						<div class="flex items-center justify-between space-x-4 px-4">
+							<Button builders={[builder]} variant="link" class="p-0">
+								<div class="flex-col">
+									<h3
+										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+									>
+										Topic 2
+									</h3>
+								</div>
+							</Button>
+							<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+								<ChevronsUpDown class="h-4 w-4" />
+								<span class="sr-only">Toggle</span>
+							</Button>
+						</div>
+					</Collapsible.Trigger>
+					<Collapsible.Content class="space-y-2">
+						<div class="px-4 py-3">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+								Cost, program, driver, public, vehicle, transport, govern, like, tradition, modern,
+								another, price, mani, expense, subsidi
+							</h4>
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+								“Economic Concerns and Costs”
+							</h4>
+							<p class="text-md leading-7">
+								This topic focuses on the economic implications of the modernization program. Tweets
+								discuss the costs for drivers and the public, the price of new vehicles, traditional
+								versus modern vehicles, and the need for government subsidies to ease the financial
+								burden.
+							</p>
+							<div class="mt-4 flex w-full items-center justify-center">
+								<Dialog.Root>
+									<Dialog.Trigger
+										><img
+											src={topic2}
+											alt="Number of Tweets by Sentiment"
+											class="w-full max-w-2xl rounded-lg object-cover"
+										/></Dialog.Trigger
+									>
+									<Dialog.Content class="max-w-6xl">
+										<div class="flex flex-col gap-4 py-4 md:grid">
+											<img
+												src={topic2}
+												alt="Number of Tweets by Sentiment"
+												class="w-full rounded-lg object-cover"
+											/>
+										</div>
+									</Dialog.Content>
+								</Dialog.Root>
+							</div>
+						</div>
+					</Collapsible.Content>
+				</Collapsible.Root>
+				<Separator class="my-4" />
+				<Collapsible.Root class="mt-4 w-full space-y-4">
+					<Collapsible.Trigger asChild let:builder>
+						<div class="flex items-center justify-between space-x-4 px-4">
+							<Button builders={[builder]} variant="link" class="p-0">
+								<div class="flex-col">
+									<h3
+										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+									>
+										Topic 3
+									</h3>
+								</div>
+							</Button>
+							<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+								<ChevronsUpDown class="h-4 w-4" />
+								<span class="sr-only">Toggle</span>
+							</Button>
+						</div>
+					</Collapsible.Trigger>
+					<Collapsible.Content class="space-y-2">
+						<div class="px-4 py-3">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+								Phaseout, notojeepneyphaseout, driver, let, strike, notopuvphaseout, commute,
+								realli, issue, understand, dont, good, still, support, affect
+							</h4>
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+								"Opposition to Phaseout"
+							</h4>
+							<p class="text-md leading-7">
+								This topic highlights the strong opposition to the phaseout of traditional jeepneys.
+								Tweets with hashtags like #NotoJeepneyPhaseout indicate organized resistance,
+								including strikes and concerns about the impact on drivers and commuters.
+							</p>
+							<div class="mt-4 flex w-full items-center justify-center">
+								<Dialog.Root>
+									<Dialog.Trigger
+										><img
+											src={topic3}
+											alt="Number of Tweets by Sentiment"
+											class="w-full max-w-2xl rounded-lg object-cover"
+										/></Dialog.Trigger
+									>
+									<Dialog.Content class="max-w-6xl">
+										<div class="flex flex-col gap-4 py-4 md:grid">
+											<img
+												src={topic3}
+												alt="Number of Tweets by Sentiment"
+												class="w-full rounded-lg object-cover"
+											/>
+										</div>
+									</Dialog.Content>
+								</Dialog.Root>
+							</div>
+						</div>
+					</Collapsible.Content>
+				</Collapsible.Root>
+				<Separator class="my-4" />
+				<Collapsible.Root class="mt-4 w-full space-y-4">
+					<Collapsible.Trigger asChild let:builder>
+						<div class="flex items-center justify-between space-x-4 px-4">
+							<Button builders={[builder]} variant="link" class="p-0">
+								<div class="flex-col">
+									<h3
+										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+									>
+										Topic 4
+									</h3>
+								</div>
+							</Button>
+							<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+								<ChevronsUpDown class="h-4 w-4" />
+								<span class="sr-only">Toggle</span>
+							</Button>
+						</div>
+					</Collapsible.Trigger>
+					<Collapsible.Content class="space-y-2">
+						<div class="px-4 py-3">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+								Stop, driver, budget, public, service, phaseout, hold, road, place, noth, travel,
+								transport, program, commute, want
+							</h4>
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+								“Public Service and Transport Disruptions”
+							</h4>
+							<p class="text-md leading-7">
+								This topic captures issues related to public service disruptions caused by the
+								phaseout, budgetary concerns, and the overall impact on transport services. It
+								includes calls for stopping the phaseout and holding the program to address various
+								challenges.
+							</p>
+							<div class="mt-4 flex w-full items-center justify-center">
+								<Dialog.Root>
+									<Dialog.Trigger
+										><img
+											src={topic4}
+											alt="Number of Tweets by Sentiment"
+											class="w-full max-w-2xl rounded-lg object-cover"
+										/></Dialog.Trigger
+									>
+									<Dialog.Content class="max-w-6xl">
+										<div class="flex flex-col gap-4 py-4 md:grid">
+											<img
+												src={topic4}
+												alt="Number of Tweets by Sentiment"
+												class="w-full rounded-lg object-cover"
+											/>
+										</div>
+									</Dialog.Content>
+								</Dialog.Root>
+							</div>
+						</div>
+					</Collapsible.Content>
+				</Collapsible.Root>
+				<Separator class="my-4" />
+				<Collapsible.Root class="mt-4 w-full space-y-4">
+					<Collapsible.Trigger asChild let:builder>
+						<div class="flex items-center justify-between space-x-4 px-4">
+							<Button builders={[builder]} variant="link" class="p-0">
+								<div class="flex-col">
+									<h3
+										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+									>
+										Topic 5
+									</h3>
+								</div>
+							</Button>
+							<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
+								<ChevronsUpDown class="h-4 w-4" />
+								<span class="sr-only">Toggle</span>
+							</Button>
+						</div>
+					</Collapsible.Trigger>
+					<Collapsible.Content class="space-y-2">
+						<div class="px-4 py-3">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
+								Driver, transport, oper, people, strike, livelihood, phase, phaseout, dont, govern,
+								cant, notojeepneyphaseout, filipino, lose, modern
+							</h4>
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+								“Impact on Drivers’ Livelihood”
+							</h4>
+							<p class="text-md leading-7">
+								This topic centers on the impact of the modernization program on the livelihoods of
+								jeepney drivers. Tweets express concerns about job losses, strikes against the
+								phaseout, and the inability of drivers to cope with the changes imposed by the
+								government.
+							</p>
+							<div class="mt-4 flex w-full items-center justify-center">
+								<Dialog.Root>
+									<Dialog.Trigger
+										><img
+											src={topic5}
+											alt="Number of Tweets by Sentiment"
+											class="w-full max-w-2xl rounded-lg object-cover"
+										/></Dialog.Trigger
+									>
+									<Dialog.Content class="max-w-6xl">
+										<div class="flex flex-col gap-4 py-4 md:grid">
+											<img
+												src={topic5}
+												alt="Number of Tweets by Sentiment"
+												class="w-full rounded-lg object-cover"
+											/>
+										</div>
+									</Dialog.Content>
+								</Dialog.Root>
+							</div>
+						</div>
+					</Collapsible.Content>
+				</Collapsible.Root>
+			</div>
+			<div
+				class="col-span-full row-auto rounded-3xl bg-secondary
+				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">Implications</h2>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					Learning the different perspectives and points between the tweet sentiments helps us
+					understand the complexities of the PUV Modernization Program’s impact on various sectors
+					of our country. The topics identified through clustering have shown both positive and
+					negative significance, especially the ones with mixed sentiments. The significance of
+					these topics include:
+				</p>
+				<ul class="m-4 list-disc pl-10">
+					<li class="text-md leading-7 [&:not(:first-child)]:mt-6">
+						The economic implications of the program have different short-term and long-term
+						effects. The long-term may bring benefits, but the short-term could impose financial
+						burdens.
+					</li>
+					<li class="text-md leading-7 [&:not(:first-child)]:mt-6">
+						The modernized PUVs are said to be safer, more reliable, and environmentally friendly,
+						an overall better alternative to traditional PUVs. However, the transition to this may
+						lead to reduced availability of transportation options.
+					</li>
+					<li class="text-md leading-7 [&:not(:first-child)]:mt-6">
+						The strong opposition to the phaseout may encourage policymakers to adjust the program
+						accordingly, but may also cause social unrest or disruptions such as the effects of
+						jeepney strikes.
+					</li>
+				</ul>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					Nevertheless, the tweets have weighed the pros and cons of the PUV Modernization Program,
+					and most have decided that it would lead to a more negative outcome than what it promises
+					itself to be.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		class="mx-auto flex max-w-6xl auto-rows-auto grid-cols-4 flex-col items-center gap-8 px-4 py-20 md:grid md:gap-16"
+		id="conclusion"
+	>
+		<div class="relative col-span-2 h-full">
+			<img
+				class="h-full w-full rounded-lg object-cover"
+				src={jeep4}
+				alt="#NoToJeepneyPhaseout Rally"
+			/>
+		</div>
+		<div class="col-span-2">
+			<h1
+				class="font-jeepney text-8xl font-extrabold tracking-tight text-green-500 drop-shadow-md"
+			>
+				06
+			</h1>
+			<h1 class="font-jeep text-7xl uppercase tracking-tight text-violet-500 drop-shadow-lg">
+				Conclusion
+			</h1>
+			<p class="my-6 text-lg">
+				The people have, no doubt, divided opinions towards the application of the PUV Modernization
+				Program to the country. While being mostly negative, we must not disregard the number of
+				positive and neutral sentiments as they may bring out essential points that contribute to
+				the issue and to understand their perspectives.
+			</p>
+			<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+				Reviewing the collated tweets from using LDA, we determined these essential points that are
+				in play:
+			</p>
+			<ul class="m-2 list-disc pl-10">
+				<li class="text-md leading-7 [&:not(:first-child)]:mt-2">
+					The program’s economic effects due to transition
+				</li>
+				<li class="text-md leading-7 [&:not(:first-child)]:mt-2">
+					The phaseout’s public and transport implications
+				</li>
+				<li class="text-md leading-7 [&:not(:first-child)]:mt-2">
+					The strong opposition to the phaseout
+				</li>
+				<li class="text-md leading-7 [&:not(:first-child)]:mt-2">
+					The impact on the driver's livelihood
+				</li>
+			</ul>
+		</div>
+		<div class="relative col-span-1 flex items-center justify-center">
+			<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
+				Limitations of the Study and Actionable Recommendations
+			</h2>
+		</div>
+		<div class="relative col-span-3 flex flex-col items-center justify-center">
+			<div
+				class="rounded-3xl w-full bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					A deeper analysis of the tweets is necessary due to the tweets being mostly non-standard
+					Filipino, many contain double meaning or deeper connotation that the English translation
+					may not capture. Using a natural language processing technique designed for the Filipino
+					Language can help analyze the tweets better.
+				</p>
+			</div>
+			<div
+				class="my-6 rounded-3xl w-full bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					The lack of a standardized method for classifying the sentiment of tweets, intuition was
+					used to determine the sentiment of the tweet which can cause bias. Developing and using a
+					more standardized framework can help with sentiment classification.
+				</p>
+			</div>
+			<div
+				class="rounded-3xl w-full bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
+					Use of a more tuned ML model to accurately find the common topics among the tweets.
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<section
 		class="bg-gradient-radial-bottom from-primary/40 to-transparent dark:from-primary/60"
 		id="team"
@@ -864,7 +1338,7 @@
 				<h1
 					class="font-jeepney text-8xl font-extrabold tracking-tight text-pink-600 drop-shadow-md"
 				>
-					05
+					07
 				</h1>
 				<h1 class="font-jeep text-7xl uppercase tracking-tight text-orange-500 drop-shadow-md">
 					Who are we?
@@ -872,7 +1346,7 @@
 			</div>
 			<div class="flex auto-rows-auto grid-cols-6 flex-col gap-8 md:grid">
 				<div
-					class="group col-span-2 row-span-1 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
+					class="group col-span-2 items-center rounded-3xl border-2 border-secondary bg-background p-8 text-center drop-shadow-lg duration-100 ease-in hover:bg-primary hover:shadow-2xl"
 				>
 					<HoverCard.Root>
 						<HoverCard.Trigger>
