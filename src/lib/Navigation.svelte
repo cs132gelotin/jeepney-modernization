@@ -4,22 +4,19 @@
 	import { toggleMode } from 'mode-watcher';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { base } from '$app/paths';
-	import  logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/logo.png';
 </script>
 
 <header
 	class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
 >
-	<div class="container flex h-14 max-w-screen items-center">
+	<div class="max-w-screen container flex h-14 items-center">
 		<div class="bg-slate mr-4 flex flex-row">
 			<a href={base} class="mr-6 flex items-center">
-				<img
-					src={logo}
-					alt="JeepneyNation"
-					class="h-8 w-auto">
+				<img src={logo} alt="JeepneyNation" class="h-8 w-auto" />
 				<!-- <p class="font-bold text-primary">JeepneyNation</p> -->
 			</a>
-			<nav class="sm:flex items-center text-center gap-6 text-sm hidden">
+			<nav class="hidden items-center gap-6 text-center text-sm md:flex">
 				<a
 					href={`${base}#overview`}
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Overview</a
@@ -34,12 +31,24 @@
 					>Materials and Methods</a
 				>
 				<a
+					href={`${base}#machinelearning`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Machine Learning</a
+				>
+				<a
+					href={`${base}#interpretation`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Interpretation</a
+				>
+				<a
+					href={`${base}#conclusion`}
+					class="text-foreground/60 transition-colors hover:text-foreground/80">Conclusion</a
+				>
+				<a
 					href={`${base}#team`}
 					class="text-foreground/60 transition-colors hover:text-foreground/80">Team</a
 				>
 			</nav>
 		</div>
-		<nav class="flex flex-1 items-center space-x-2 justify-end">
+		<nav class="flex flex-1 items-center justify-end space-x-2">
 			<Button
 				variant="outline"
 				size="icon"

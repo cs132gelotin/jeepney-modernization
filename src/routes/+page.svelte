@@ -204,6 +204,7 @@
 			</Carousel.Root>
 		</div>
 	</section>
+
 	<section
 		class="mx-auto flex h-screen-minus-navbar flex-col items-center justify-center gap-2 py-20 text-center"
 	>
@@ -434,6 +435,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20" id="materials&methods">
 		<div class="flex flex-col items-end">
 			<h1
@@ -446,7 +448,7 @@
 			>
 				Materials and Methods
 			</h1>
-			<div class="flex flex-col gap-4 sm:flex-row items-end">
+			<div class="flex flex-col items-end gap-4 sm:flex-row">
 				<a
 					href="https://docs.google.com/spreadsheets/d/12IpBDpizXs0iUv-_JWSdayhhISXB46U-ikx9F7g1sbY/edit#gid=0"
 					target="_blank"
@@ -475,55 +477,55 @@
 				</h2>
 				<div class="flex max-w-4xl flex-wrap items-center justify-center gap-x-4 gap-y-3">
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>electric</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>jeep</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>jeepney</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>jeepney modernization</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>jeepney phaseout</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>modern</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>modernisasyon</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>modernization</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>phaseout</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>puv</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>puv modernization</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>puv phaseout</button
 					>
 					<button
-						class="rounded-full bg-zinc-900 px-6 py-3 sm:text-lg text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80"
+						class="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/50 duration-200 ease-in hover:scale-110 hover:bg-white hover:text-primary hover:shadow-lg hover:shadow-black/80 sm:text-lg"
 						>strike</button
 					>
 				</div>
@@ -570,7 +572,9 @@
 					<Button builders={[builder]} variant="link" class="p-0 text-foreground">
 						<div class="flex-col">
 							<h4 class="hidden text-2xl font-semibold sm:flex">Natural Language Processing</h4>
-							<h4 class="flex text-2xl font-semibold sm:hidden text-left">Natural Language<br />Processing</h4>
+							<h4 class="flex text-left text-2xl font-semibold sm:hidden">
+								Natural Language<br />Processing
+							</h4>
 						</div>
 					</Button>
 					<Button builders={[builder]} variant="ghost" size="sm" class="w-9 p-0">
@@ -809,6 +813,48 @@
 		</Collapsible.Root>
 		<Separator />
 	</section>
+
+	<section
+		class="w-full bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
+		id="machinelearning"
+	>
+		<div class="mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-20 text-center">
+			<div>
+				<h1
+					class="font-jeepney text-8xl font-extrabold tracking-tight text-orange-400 drop-shadow-md dark:text-orange-400"
+				>
+					04
+				</h1>
+				<h1 class="font-jeep text-7xl uppercase tracking-tight text-violet-500 drop-shadow-lg">
+					Machine Learning
+				</h1>
+				<Button variant="outline"
+				><a class="flex items-center justify-center space-x-2"
+					target="_blank"
+					href="https://colab.research.google.com/drive/1iF-sZdCyK_fl5Yoye69RGQGlZGINgaLe#scrollTo=E2Kr_i1uxfkW&line=3&uniqifier=1"
+					><i class="fa-solid fa-up-right-from-square"></i>
+					<p class="">View the LDA model here</p></a
+				></Button
+			>
+			</div>
+			<div
+				class="rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+			>
+				<h2 class="scroll-m-20 text-2xl font-semibold tracking-tight">
+					Extracting Topic Modeling Features using LDA (Latent Dirichlet Allocation)
+				</h2>
+				<p class="text-md leading-7 [&:not(:first-child)]:mt-6">
+					In natural language processing, Latent Dirichlet Allocation (LDA) is a generative
+					statistical model (unsupervised) that explains a set of observations through unobserved
+					groups, and each group explains why some parts of the data are similar. The LDA is an
+					example of a topic model. In this, observations (i.e., words) are collected into
+					documents, and each word's presence is attributable to one of the document's topics. Each
+					document will contain a small number of topics.
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<section
 		class="bg-gradient-radial-bottom from-primary/40 to-transparent dark:from-primary/60"
 		id="team"
@@ -818,7 +864,7 @@
 				<h1
 					class="font-jeepney text-8xl font-extrabold tracking-tight text-pink-600 drop-shadow-md"
 				>
-					04
+					05
 				</h1>
 				<h1 class="font-jeep text-7xl uppercase tracking-tight text-orange-500 drop-shadow-md">
 					Who are we?
