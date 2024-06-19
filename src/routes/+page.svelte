@@ -880,9 +880,7 @@
 				class="col-span-1 row-auto rounded-3xl bg-secondary
 				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
-				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
-					Research Question 1
-				</h2>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">Research Question 1</h2>
 				<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
 					What is the general reaction of the population regarding the PUV Modernization Program?
 				</h4>
@@ -902,9 +900,7 @@
 				class="col-span-1 row-auto rounded-3xl bg-secondary
 				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
-				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
-					Research Question 2
-				</h2>
+				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">Research Question 2</h2>
 				<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
 					What are the frequent words used when the user activity increases?
 				</h4>
@@ -927,9 +923,14 @@
 							<Button builders={[builder]} variant="link" class="p-0">
 								<div class="flex-col">
 									<h3
-										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+										class="flex w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:hidden"
 									>
 										Topic 1
+									</h3>
+									<h3
+										class="hidden w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:flex"
+									>
+										Topic 1 - "Jeepney Modernization Program Overview"
 									</h3>
 								</div>
 							</Button>
@@ -941,11 +942,11 @@
 					</Collapsible.Trigger>
 					<Collapsible.Content class="space-y-2">
 						<div class="px-4 py-3">
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
-								Phaseout, manila, class, said, bill, answer, transport, someth, electr, continue,
-								program, save, project, maybe, instead
+							<h4 class="text-lg font-bold italic leading-7 mb-4">
+								Words: Phaseout, manila, class, said, bill, answer, transport, someth, electr,
+								continue, program, save, project, maybe, instead
 							</h4>
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+							<h4 class="flex text-lg font-semibold leading-7 md:hidden [&:not(:first-child)]:mt-6">
 								“Jeepney Modernization Program Overview”
 							</h4>
 							<p class="text-md leading-7">
@@ -983,9 +984,14 @@
 							<Button builders={[builder]} variant="link" class="p-0">
 								<div class="flex-col">
 									<h3
-										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+										class="flex w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:hidden"
 									>
 										Topic 2
+									</h3>
+									<h3
+										class="hidden w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:flex"
+									>
+										Topic 2 - “Economic Concerns and Costs”
 									</h3>
 								</div>
 							</Button>
@@ -997,11 +1003,11 @@
 					</Collapsible.Trigger>
 					<Collapsible.Content class="space-y-2">
 						<div class="px-4 py-3">
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
-								Cost, program, driver, public, vehicle, transport, govern, like, tradition, modern,
+							<h4 class="text-lg font-bold italic leading-7 mb-4">
+								Words: Cost, program, driver, public, vehicle, transport, govern, like, tradition, modern,
 								another, price, mani, expense, subsidi
 							</h4>
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6 flex md:hidden">
 								“Economic Concerns and Costs”
 							</h4>
 							<p class="text-md leading-7">
@@ -1040,9 +1046,14 @@
 							<Button builders={[builder]} variant="link" class="p-0">
 								<div class="flex-col">
 									<h3
-										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+										class="flex w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:hidden"
 									>
 										Topic 3
+									</h3>
+									<h3
+										class="hidden w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:flex"
+									>
+										Topic 3 - “Opposition to Phaseout”
 									</h3>
 								</div>
 							</Button>
@@ -1054,11 +1065,11 @@
 					</Collapsible.Trigger>
 					<Collapsible.Content class="space-y-2">
 						<div class="px-4 py-3">
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
-								Phaseout, notojeepneyphaseout, driver, let, strike, notopuvphaseout, commute,
+							<h4 class="text-lg font-bold leading-7 mb-4 italic">
+								Words: Phaseout, notojeepneyphaseout, driver, let, strike, notopuvphaseout, commute,
 								realli, issue, understand, dont, good, still, support, affect
 							</h4>
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6 md:hidden flex">
 								"Opposition to Phaseout"
 							</h4>
 							<p class="text-md leading-7">
@@ -1096,9 +1107,14 @@
 							<Button builders={[builder]} variant="link" class="p-0">
 								<div class="flex-col">
 									<h3
-										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+										class="flex w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:hidden"
 									>
 										Topic 4
+									</h3>
+									<h3
+										class="hidden w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:flex"
+									>
+										Topic 4 - “Public Service and Transport Disruptions”
 									</h3>
 								</div>
 							</Button>
@@ -1110,11 +1126,11 @@
 					</Collapsible.Trigger>
 					<Collapsible.Content class="space-y-2">
 						<div class="px-4 py-3">
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
-								Stop, driver, budget, public, service, phaseout, hold, road, place, noth, travel,
+							<h4 class="text-lg font-bold leading-7 mb-4 italic">
+								Words: Stop, driver, budget, public, service, phaseout, hold, road, place, noth, travel,
 								transport, program, commute, want
 							</h4>
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6 md:hidden flex">
 								“Public Service and Transport Disruptions”
 							</h4>
 							<p class="text-md leading-7">
@@ -1153,9 +1169,14 @@
 							<Button builders={[builder]} variant="link" class="p-0">
 								<div class="flex-col">
 									<h3
-										class="flex text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white"
+										class="flex w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:hidden"
 									>
 										Topic 5
+									</h3>
+									<h3
+										class="hidden w-full text-2xl font-semibold text-foreground duration-100 ease-in group-hover:text-white md:flex"
+									>
+										Topic 5 - “Impact on Drivers’ Livelihood”
 									</h3>
 								</div>
 							</Button>
@@ -1167,11 +1188,11 @@
 					</Collapsible.Trigger>
 					<Collapsible.Content class="space-y-2">
 						<div class="px-4 py-3">
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
-								Driver, transport, oper, people, strike, livelihood, phase, phaseout, dont, govern,
+							<h4 class="text-lg font-bold leading-7 mb-4 italic">
+								Words: Driver, transport, oper, people, strike, livelihood, phase, phaseout, dont, govern,
 								cant, notojeepneyphaseout, filipino, lose, modern
 							</h4>
-							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6">
+							<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-6 md:hidden flex">
 								“Impact on Drivers’ Livelihood”
 							</h4>
 							<p class="text-md leading-7">
@@ -1286,7 +1307,7 @@
 			</ul>
 		</div>
 		<div class="relative col-span-1 flex items-center justify-center">
-			<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
+			<h2 class="scroll-m-20 pb-2 text-4xl font-bold tracking-tight">
 				Limitations of the Study and Actionable Recommendations
 			</h2>
 		</div>
