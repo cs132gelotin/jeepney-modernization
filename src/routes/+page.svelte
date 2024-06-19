@@ -821,7 +821,7 @@
 	</section>
 
 	<section
-		class="w-full bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
+		class="w-full min-h-screen items-center flex justify-center bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
 		id="machinelearning"
 	>
 		<div class="mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-20 text-center">
