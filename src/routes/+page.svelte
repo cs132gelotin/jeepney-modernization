@@ -821,7 +821,7 @@
 	</section>
 
 	<section
-		class="w-full min-h-screen items-center flex justify-center bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
+		class="flex min-h-screen w-full items-center justify-center bg-gradient-radial-top from-blue-300/80 to-transparent dark:from-primary/10"
 		id="machinelearning"
 	>
 		<div class="mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-20 text-center">
@@ -838,7 +838,7 @@
 					><a
 						class="flex items-center justify-center space-x-2"
 						target="_blank"
-						href="https://colab.research.google.com/drive/1iF-sZdCyK_fl5Yoye69RGQGlZGINgaLe#scrollTo=E2Kr_i1uxfkW&line=3&uniqifier=1"
+						href="https://colab.research.google.com/drive/1_0Ua2sbmbo0mzbNshLNY-L0tHrWosjAW?authuser=0#scrollTo=0TV9Fb562T8s"
 						><i class="fa-solid fa-chart-simple"></i>
 						<p class="">View the LDA model here</p></a
 					></Button
@@ -863,7 +863,7 @@
 	</section>
 
 	<section class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-20" id="results">
-		<div class="flex auto-rows-auto grid-cols-3 flex-col gap-8 md:grid">
+		<div class="flex auto-rows-auto grid-cols-2 flex-col gap-8 md:grid">
 			<div class="col-span-full">
 				<h1
 					class="font-jeepney text-8xl font-extrabold tracking-tight text-yellow-400 drop-shadow-md dark:text-green-400"
@@ -881,7 +881,7 @@
 				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
 				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
-					Research Question 1 (Graph 1)
+					Research Question 1
 				</h2>
 				<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
 					What is the general reaction of the population regarding the PUV Modernization Program?
@@ -892,13 +892,6 @@
 					months. From this observation, we can safely say that the general reaction of the
 					population regarding the PUV Modernization Program is mostly negative.
 				</p>
-			</div>
-			<div
-				class="col-span-1 row-auto rounded-3xl bg-secondary
-				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
-			>
-				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">Research Question 1 (ML)</h2>
-
 				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
 					Analysis of the topic clustering shows that tweets concerning all of the topics are either
 					mixed or negative. This implies that the negative sentiment is much more prominent
@@ -910,7 +903,7 @@
 				p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
 				<h2 class="scroll-m-20 pb-2 text-2xl font-bold tracking-tight">
-					Research Question 2 (Graph 2)
+					Research Question 2
 				</h2>
 				<h4 class="text-lg font-semibold leading-7 [&:not(:first-child)]:mt-3">
 					What are the frequent words used when the user activity increases?
@@ -1261,9 +1254,7 @@
 			/>
 		</div>
 		<div class="col-span-2">
-			<h1
-				class="font-jeepney text-8xl font-extrabold tracking-tight text-green-500 drop-shadow-md"
-			>
+			<h1 class="font-jeepney text-8xl font-extrabold tracking-tight text-green-500 drop-shadow-md">
 				06
 			</h1>
 			<h1 class="font-jeep text-7xl uppercase tracking-tight text-violet-500 drop-shadow-lg">
@@ -1301,7 +1292,7 @@
 		</div>
 		<div class="relative col-span-3 flex flex-col items-center justify-center">
 			<div
-				class="rounded-3xl w-full bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+				class="w-full rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
 				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
 					A deeper analysis of the tweets is necessary due to the tweets being mostly non-standard
@@ -1311,7 +1302,7 @@
 				</p>
 			</div>
 			<div
-				class="my-6 rounded-3xl w-full bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+				class="my-6 w-full rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
 				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
 					The lack of a standardized method for classifying the sentiment of tweets, intuition was
@@ -1320,7 +1311,7 @@
 				</p>
 			</div>
 			<div
-				class="rounded-3xl w-full bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
+				class="w-full rounded-3xl bg-secondary p-8 drop-shadow-lg duration-100 ease-in hover:bg-primary hover:text-white hover:shadow-2xl"
 			>
 				<p class="text-md leading-7 [&:not(:first-child)]:mt-3">
 					Use of a more tuned ML model to accurately find the common topics among the tweets.
